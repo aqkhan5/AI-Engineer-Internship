@@ -34,7 +34,6 @@ while True:
     else:
         print("✓ Great! You can ride this rollercoaster!")
 
-
         #Checking Age
         try:
             age = int(input("\nWhat is Your age? "))
