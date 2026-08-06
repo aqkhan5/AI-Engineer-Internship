@@ -4,7 +4,7 @@ print("Start")
 
 # Variable for Statistical accounting
 total_customers = 0
-total_revenue = 0
+total_revenue: float = 0
 senior_free_rides = 0
 photo_packages_sold = 0
 
@@ -67,14 +67,49 @@ while True:
 
         # Photo Demands
         photos = input("Do you want photos \nyes/no.  ").strip().lower()
-        if photos == "yes" or photos == "Yes":
+        if photos == "yes":
             photo_cost: float = 3
-            print(f"photos cost for ${3}")
+            photo_packages_sold += 1
 
-            # Calculate bill
-            total_bill: float = ticket_price + photo_cost
-            print(f"Your total_bill is ${total_bill}")
         else:
             #caluculate bill
-            total_bill = ticket_price
-            print(f"Your total bill is ${total_bill}")
+            photo_cost: float = 0
+
+        # Calculate bill
+        total_bill: float = ticket_price + photo_cost
+        print(f"Your total_bill is ${total_bill}")
+        total_revenue += total_bill
+        total_customers += 1
+
+        print("\n ------your Bill-----")
+        if ticket_price == 0:
+            print("ticket price $0 Senior Discount!")
+        else:
+            print(f"Ticket Price is ${ticket_price}")
+
+        print(f"photo_cost is ${photo_cost}")
+        print("--------------------------") 
+        print(f"Total bill is ${total_bill}")
+
+        if ticket_price == 0:
+            print("Thanks for celebrating with us")
+
+    another = input("\n Process another customer. yes/no ").strip().lower()
+    if another != "yes":
+        break
+    customer +=1
+
+# ------session summary--------
+print("---------SESSION SUMMARY----------")
+print(f"Total customer processed {total_customers}")
+print(f"Total Revenue Generated {total_revenue}")
+print(f"Phot0 Pakage Sold {photo_packages_sold}")
+print(f"Senior Free Rides {senior_free_rides}")
+
+if total_customers > 0:
+    average = total_revenue/total_customers
+else:
+    average = 0
+
+print(f"The average revenue per customer. ${average:.2f}")
+print("THANKS FOR VISITING")
