@@ -29,15 +29,15 @@ if level_1 == 1:
             print("    \nBlue. Eaten by beasts. \nGame OVer!")
         else:
             print("    \nInvalid input. \n Game over!")
-        
+
+    #Calculating the total bill    
     elif level_2 == 2:
         print("   \nAttacked by traut. \nDead Game over!")
     else:
          print("   \nInvalid input. /n Game over!")
 
+
 elif level_1 == 2:
     print("    \nWrong direction, Dead. \nGame Over!")
 else:
     print("    \nInvalid input. \n Game over!")
-
-
