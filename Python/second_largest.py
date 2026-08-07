@@ -7,7 +7,7 @@ for num in numbers:
     if num > largest:
         second_largest = largest
         largest = num
-    elif num > second_largest & num != largest:
+    elif num > second_largest and num != largest:
         second_largest = num
 
 print(f"The Second largest number is {second_largest}")
