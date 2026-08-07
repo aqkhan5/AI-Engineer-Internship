@@ -1,4 +1,4 @@
-# Finding the max even number in the list.
+# Finding the max even number in the lit.
 numbers = numbers = [21, 19, 17]
 max_even_number = None
 
