@@ -7,140 +7,21 @@ class Library(Exception):
     def __init__ (sefl, message):
         super().__init__(message)
 
-class NotFound(Library):
+class NotFoundError(Library):
     # raise exceptional when there will be no book found or no customer found
     pass
 
-class BookUnavailable(Library):
+class BookUnavailableErro(Library):
     # raise exception when there will be no book available
     pass
 
-class BorrowLimitRearched(Library):
+class BorrowLimitRearchedError(Library):
     # raise exception when there will be borrow limit reached
     pass
 
-class Invalid(Library):
+class InvalidReturnError(Library):
     # raise exception when any member try to return the book they currenly doesn't hold.
     pass
 
-# part 2 domain model
-from dataclasses import dataclass, field
-from typing import List
-
-class Book:
-    book_id: str
-    title: str
-    author: str
-    is_available: bool = True
-
-@dataclass
-class Member:
-    member_id: str
-    name: str
-    member_type: str
-    borrowed_book: List[Book] = field(default_factory = List)
-
-#loops
-def get_member_borrow_limit(member: Member) -> int:
-    """Returns borrowing limit using conditonals"""
-    if member.member_type == "VIP":
-        return 5
-    elif member.member_type == "Standard":
-        return 2
-    else:
-        return 1
-
-def check_can_borrow(member: Member) -> bool:
-    "check if the member have their limit left or not"
-    limit = get_member_borrow_limit(member)
-
-    if len(member.borrowed_books ) >= limit:
-        return False
-    else:
-        return True
-    
-def find_book_in_list(book_list: List[Book], book_id: str):
-    "Utility helper using a simple for loop to locate a book by ID."
-    for book in book_list:
-        if book.book_id == book_id:
-            return book
-    return None
-
-def find_book_in_list(book_list: List[Book], book_id: str):
-    """Utility helper using a simple for-loop to locate a book by ID."""
-    for book in book_list:
-        if book.book_id == book_id:
-            return book
-    return None
 
 
-# section 3 library manager workflow
-class Library:
-    "central manager storing books and members with clear functional methods"
-
-    def __init__(self):
-        self.books = {}
-        self.members={}
-
-    def add_book(self, book: Book):
-        "Adds a new book to the library."
-        self.books[book.book_id] = book
-
-    def register_member(self, member: Member):
-        "Registers a new member in the library."
-        self.members[member.member_id] = member
-
-    def get_book(self, book_id: str) -> Book:
-        "looks up a book by ID using dictionary check."
-        if book_id in self.books:
-            return self.books[book_id]
-        else:
-            raise NotFound(f"Book with ID '{book_id}' does not exist.")
-
-    def get_member(self, member_id: str) -> Member:
-        "looks up a member ID using standard dictionary check."
-        if member_id in self.members:
-            return self.members[member_id]
-        else: raise NotFound(f"Member with ID '{member_id}' does not exist. ")
-
-    def list_available_books(self) -> [Book]:
-        "Iterates through books and collects available ones using a loop."
-
-        available  = []
-        for book in self.books.values():
-            if book.is_available:
-                available.append(book)
-            return available
-
-    def list_member_borrowed_book(self, member_id: str) -> List[Book]:
-        "Returns the list of currently borrowed books for a specific members"
-        member =  self.get_member(member_id)
-        return member.borrowed_books
-
-# Borrowing conditions 
-def borrow_book(self, member_id: str, book_id: str):
-    "Validates rules and processes a book borrow request."
-    member = self. get_member(member_id)
-    book = self. get_book(book_id)
-
-
-def borrow_book(self, member_id: str, book_id: str):
-        """Validates rules and processes a book borrow request."""
-        # 1. Validate Member & Book Existence
-        member = self.get_member(member_id)
-        book = self.get_book(book_id)
-
-        # 2. Check Book Availability
-        if not book.is_available:
-            raise BookUnavailable(f"Cannot borrow: '{book.title}' is currently unavailable.")
-
-        # 3 Check Members limit
-        if not check_can_borrow(member):
-            limit = get_member_borrow_limit(member)
-            raise BorrowLimitRearched(f"Cannot borrow: member '{member.name}' has reached their limit of {limit} book(s)")
-        
-        # 4 Process Borrow Action
-        book.is_available = False
-        member.borrowed_books.append(book)
-        print(f"Success: '{book.title}' borrowed by {member.name}.")
-        

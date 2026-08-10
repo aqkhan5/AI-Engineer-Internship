@@ -193,7 +193,7 @@ def run_demo():
 
     # 1. Initialize Library
     library = Library()
-
+    
     # 2. Add Books
     b1 = Book(book_id="B101", title="Python Crash Course", author="Eric Matthes")
     b2 = Book(book_id="B102", title="Clean Code", author="Robert C. Martin")
