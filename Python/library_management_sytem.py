@@ -1,4 +1,4 @@
-from typing import Dict, List
+from typing import Dict
 
 
 # part 1 custom exception handling 
