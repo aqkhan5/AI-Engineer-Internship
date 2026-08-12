@@ -1,0 +1,33 @@
+# Using path query and request body in the combine form
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+users = []
+
+class User(BaseModel):
+    name : str
+    age : int
+# Create user data
+@app.post("/users")
+def create_user(user: User):
+    users.append(user)
+    return {
+        "message" : "Data Created",
+        "data" : user
+    }
+
+# Update data
+@app.put("/users/{user_id}")
+def update_user(user_id: int, user: User, notify: bool = False):
+    if user_id < len(users):
+        users[user_id] = user
+        return{
+            "message" : "User updated",
+            "notify" : notify,
+            "data" : user
+        }
+    return{
+        "Error" : "No user found"
+    }
