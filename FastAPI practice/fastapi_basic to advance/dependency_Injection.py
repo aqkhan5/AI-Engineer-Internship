@@ -11,6 +11,8 @@ def common_logic():
 def home(data = Depends(common_logic)):
     return data
 
+
+
 # Reuse logic
 def current_user():
     return{
