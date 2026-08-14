@@ -1,6 +1,6 @@
 #Custom codes and responses and basic error handling
-from fastapi import FastAPI, status, HTTPException
 
+from fastapi import FastAPI, status, HTTPException
 
 app = FastAPI()
 # Status codes check 
