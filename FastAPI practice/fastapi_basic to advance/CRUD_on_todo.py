@@ -11,6 +11,7 @@ class Todo(BaseModel):
     title : str
     completed : bool
 
+
 # creating the data
 @app.post("/todos")
 def create_todo(todo: Todo):
