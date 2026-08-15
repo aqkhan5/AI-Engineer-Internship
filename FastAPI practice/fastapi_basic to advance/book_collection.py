@@ -1,3 +1,5 @@
+# Book Collection API
+# Simple API to manage a collection of books. A pure CRUD application with in-memory storage.
 from fastapi import FastAPI, HTTPException, Path
 from pydantic import BaseModel
 from typing import Optional, List
@@ -24,7 +26,7 @@ class BookResponse(BaseModel):
 books_db = []
 book_id_counter = 1
 
-
+# Add Books
 @app.post("/books", response_model= BookResponse, status_code=201)
 async def creat_books(book: BookCreate):
     global book_id_counter
