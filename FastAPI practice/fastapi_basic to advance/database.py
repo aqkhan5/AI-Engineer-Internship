@@ -1,5 +1,5 @@
 from sqlalchemy.orm import sessionmaker, declarative_base, Session
-from sqlalchemy import create_engine, Column, Integer, String
+from sql_alchemy import create_engine, Column, Integer, String
 from fastapi import FastAPI, Depends
 
 app = FastAPI()
@@ -43,3 +43,4 @@ def home(db: Session = Depends(get_db)):
     return {
         "message" : "DB Connected fine"
     }
+  
