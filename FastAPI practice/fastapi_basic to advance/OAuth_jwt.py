@@ -53,14 +53,14 @@ def login(form_data: OAuth2PasswordRequestForm = Depends()):
         )
     acces_token = create_token({"sub": form_data.username})
     return{
-        "access token" : acces_token,
+        "access_token" : acces_token,
         "token_type" : "bearer"
     }
 
 # Token verify
 def verify_token(token: str = Depends(oauth2_schema)):
     try:
-        payload = jwt.decode(token, SECRET_KEY, algorithm=ALGORITHM)
+        payload = jwt.decode(token, SECRET_KEY, algorithms=ALGORITHM)
         username: str = payload.get("sub")
 
         if username is None:
