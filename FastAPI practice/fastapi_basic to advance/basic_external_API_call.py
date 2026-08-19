@@ -19,7 +19,7 @@ def get_posts():
     return response.json()
 
 @app.get("/posts/{post_id}")
-def get_a_post():
+def get_a_post(post_id: int):
     url = "https://jsonplaceholder.typicode.com/posts"
     response = requests.get(url)
 
