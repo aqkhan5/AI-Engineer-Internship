@@ -1,8 +1,26 @@
-import json
-from urllib.request import urlopen
+# import json
+# import requests
 
-response = urlopen("https://jsonplaceholder.typicode.com/posts")
+# response = requests.get("https://jsonplaceholder.typicode.com/posts")
 
-data = json.load(response)
+# data = response.json()
 
-print(data[:2])
+# print(data[:2])
+
+from fastapi import FastAPI
+import requests
+app = FastAPI()
+
+@app.get("/posts")
+def get_posts():
+    url = "https://jsonplaceholder.typicode.com/posts"
+    response = requests.get(url)
+
+    return response.json()
+
+@app.get("/posts/{post_id}")
+def get_a_post():
+    url = "https://jsonplaceholder.typicode.com/posts"
+    response = requests.get(url)
+
+    return response.json()
