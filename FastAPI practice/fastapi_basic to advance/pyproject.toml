@@ -14,5 +14,6 @@ dependencies = [
     "python-jose>=3.5.0",
     "python-multipart>=0.0.32",
     "requests>=2.34.2",
+    "slowapi>=0.1.10",
     "sqlalchemy>=2.0.52",
 ]
