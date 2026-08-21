@@ -63,7 +63,6 @@ def rate_limit_handler(request: Request, exc: RateLimitExceeded):
         }
     )
 
-
 # 5. PROTECTED ROUTE / ENDPOINT
 # ------------------------------------------------------------------------------
 # @app.get("/data"): Defines a GET route at path '/data'.
