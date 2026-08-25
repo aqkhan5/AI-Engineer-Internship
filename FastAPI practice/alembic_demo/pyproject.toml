@@ -7,7 +7,13 @@ authors = [
     { name = "AbdulQadeerKhan555", email = "aq272570@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "alembic>=1.19.1",
+    "fastapi>=0.141.1",
+    "pydantic>=2.13.4",
+    "sqlalchemy>=2.0.52",
+    "uvicorn>=0.52.4",
+]
 
 [project.scripts]
 alembic-demo = "alembic_demo:main"
