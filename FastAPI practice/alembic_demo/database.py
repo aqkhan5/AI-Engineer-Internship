@@ -1,10 +1,10 @@
-from sqlalchemy import create_engine, Column, Integer, String, Boolean, ForeignKey
-from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+from sqlalchemy import create_engine, Column, Integer, String, Boolean
+from sqlalchemy.orm import declarative_base, sessionmaker
 
 DATABASE_URL = "sqlite:///./test.db"
 
-engine = create_engine(DATABASE_URL, connect_args = {"check_same_thread":False})
-sessionLocal = sessionmaker(auto_commit = False, auto_flush = False, bind = engine)
+engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
 
@@ -13,3 +13,5 @@ class User(Base):
 
     id = Column(Integer, primary_key = True, index = True)
     email = Column(String, unique = True, index = True, nullable = False)
+    hashed_password = Column(String, nullable = False)
+    is_active = Column(Boolean, default=True)
