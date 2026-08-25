@@ -1,0 +1,24 @@
+[project]
+name = "fastapi-alembic-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AbdulQadeerKhan555", email = "aq272570@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.19.1",
+    "email-validator>=2.3.0",
+    "fastapi>=0.141.1",
+    "pydantic>=2.13.4",
+    "sqlalchemy>=2.0.52",
+    "uvicorn>=0.52.1",
+]
+
+[project.scripts]
+fastapi-alembic-demo = "fastapi_alembic_demo:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"

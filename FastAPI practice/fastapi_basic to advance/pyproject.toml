@@ -17,3 +17,8 @@ dependencies = [
     "slowapi>=0.1.10",
     "sqlalchemy>=2.0.52",
 ]
+
+[tool.uv.workspace]
+members = [
+    "fastapi_alembic_demo",
+]
