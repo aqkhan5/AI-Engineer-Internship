@@ -34,10 +34,25 @@ def creat_blog(blog: schemas.BlogCreate, db: Session = Depends(get_db), user = D
     return new_blog
 
 # Get all blogs
+# Pagination Implemented
 @app.get("/blogs", response_model=list[schemas.BlogResponse])
-def get_blogs(db: Session = Depends(get_db)):
-    blogs = db.query(models.Blog).order_by(models.Blog.id).all()
-    return blogs
+def get_blogs(
+    page: int =1,
+    limit : int = 5,
+    search : str = Query(default=""),
+    db: Session = Depends(get_db)):
+    query = db.query(models.Blog)
+    if search:
+        query = query.filter(models.Blog.title.ilike(f"%{search}%"))
+    total = query.count()
+    start = (page-1)*limit
+    blogs = query.offset(start).limit(limit).all()
+    return {
+        "page" : page,
+        "limit" : limit,
+        "total" : total,
+        "data" : blogs
+    }
 
 #get sepecific data
 @app.get("/blogs/{id}", response_model=schemas.BlogResponse)
