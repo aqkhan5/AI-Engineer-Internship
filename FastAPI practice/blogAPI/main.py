@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from database import engine, sessionLocal
 import models, schemas
-
+from auth import create_token, verify_token
 
 models.Base.metadata.create_all(bind = engine)
 app  = FastAPI(title= "blogAPI")
@@ -14,8 +14,16 @@ def get_db():
     finally:
         db.close()
 
+# Login API
+@app.post("/login")
+def login():
+    return{
+        "access_token" : create_token({"user" : "admin"}),
+        "token_type" : "bearer"
+    }
+
 @app.post("/blogs" , response_model= schemas.BlogResponse)
-def creat_blog(blog: schemas.BlogCreate, db: Session = Depends(get_db)):
+def creat_blog(blog: schemas.BlogCreate, db: Session = Depends(get_db), user = Depends(verify_token)):
     new_blog = models.Blog(
         title = blog.title,
         content = blog.content
@@ -33,7 +41,7 @@ def get_blogs(db: Session = Depends(get_db)):
 
 #get sepecific data
 @app.get("/blogs/{id}", response_model=schemas.BlogResponse)
-def get_blog(id:int, db:Session = Depends(get_db)):
+def get_blog(id:int, db:Session = Depends(get_db), user = Depends(verify_token)):
     blog = db.query(models.Blog).filter(models.Blog.id == id).first()
     if not blog:
         raise HTTPException(
@@ -44,7 +52,7 @@ def get_blog(id:int, db:Session = Depends(get_db)):
 
 # update data
 @app.put("/blogs/{id}", response_model= schemas.BlogResponse)
-def update_blog(id: int, blog: schemas.BlogCreate, db: Session = Depends(get_db)):
+def update_blog(id: int, blog: schemas.BlogCreate, db: Session = Depends(get_db), user = Depends(verify_token)):
     existing_blog = db.query(models.Blog).filter(models.Blog.id == id).first()
     if not existing_blog:
         raise HTTPException(
@@ -60,7 +68,7 @@ def update_blog(id: int, blog: schemas.BlogCreate, db: Session = Depends(get_db)
 
 # Delete blog data
 @app.delete("/blogs/{id}")
-def delete_blog(id: int, db: Session = Depends(get_db)):
+def delete_blog(id: int, db: Session = Depends(get_db), user = Depends(verify_token)):
     blog = db.query(models.Blog).filter(models.Blog.id == id)
     if not blog.first():
         raise HTTPException(
@@ -73,4 +81,3 @@ def delete_blog(id: int, db: Session = Depends(get_db)):
     return {
         "Blog deleted successfully"
     }
-
