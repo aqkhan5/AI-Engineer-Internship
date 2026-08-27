@@ -15,8 +15,8 @@ def get_db():
         db.close()
 
 @app.post("/blogs" , response_model= schemas.BlogResponse)
-def creat_blog(blog: schemas.BlogResponse ,db: Sesssion = Depends(get_db)):
-    new_blog = models.blog(
+def creat_blog(blog: schemas.BlogCreate ,db: Sesssion = Depends(get_db)):
+    new_blog = models.Blog(
         title = blog.title,
         content = blog.content
     )
