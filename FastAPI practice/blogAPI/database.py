@@ -10,6 +10,6 @@ DATABASE_URL = env_url
 
 engine = create_engine(DATABASE_URL)
 
-sessionLocal = sessionmaker(autoflush= False, auto_commit = False, bind= engine)
+sessionLocal = sessionmaker(bind= engine)
 
 Base = declarative_base()

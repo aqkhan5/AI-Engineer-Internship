@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Depends, HTTPException, Query
-from sqlalchemy.orm import Sesssion
+from sqlalchemy.orm import Session
 from database import engine, sessionLocal
 import models, schemas
 
@@ -15,7 +15,7 @@ def get_db():
         db.close()
 
 @app.post("/blogs" , response_model= schemas.BlogResponse)
-def creat_blog(blog: schemas.BlogCreate ,db: Sesssion = Depends(get_db)):
+def creat_blog(blog: schemas.BlogCreate, db: Session = Depends(get_db)):
     new_blog = models.Blog(
         title = blog.title,
         content = blog.content
@@ -24,3 +24,4 @@ def creat_blog(blog: schemas.BlogCreate ,db: Sesssion = Depends(get_db)):
     db.commit()
     db.refresh(new_blog)
     return new_blog
+
