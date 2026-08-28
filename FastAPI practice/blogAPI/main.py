@@ -35,7 +35,7 @@ def creat_blog(blog: schemas.BlogCreate, db: Session = Depends(get_db), user = D
 
 # Get all blogs
 # Pagination Implemented
-@app.get("/blogs", response_model=list[schemas.BlogResponse])
+@app.get("/blogs", response_model=schemas.PaginatedBlogResponse)
 def get_blogs(
     page: int =1,
     limit : int = 5,
