@@ -16,6 +16,7 @@ dependencies = [
     "python-jose>=3.5.0",
     "sqlalchemy>=2.0.52",
     "uvicorn>=0.52.4",
+    "werkzeug>=3.1.8",
 ]
 
 [project.scripts]
