@@ -27,3 +27,17 @@ def create_post(
         content = new_post.content,
         author= current_user.username
     )
+
+@router.get("/", response_model= List[schemas.PostResponse])
+def get_posts(db: Session = Depends(get_db)):
+    posts = db.query(models.Post).all()
+    return [
+        schemas.PostResponse(
+            id = post.id,
+            title = post.title,
+            content = post.content,
+            author = post.owner.username
+
+        )
+        for post in posts
+    ]
