@@ -1,0 +1,24 @@
+[project]
+name = "advance-blog-api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AbdulQadeerKhan555", email = "aq272570@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.19.1",
+    "dotenv>=0.9.9",
+    "fastapi>=0.141.1",
+    "pydantic>=2.13.5",
+    "python-jose>=3.5.0",
+    "sqlalchemy>=2.0.52",
+]
+
+[project.scripts]
+advance-blog-api = "advance_blog_api:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
