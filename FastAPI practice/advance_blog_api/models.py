@@ -5,9 +5,9 @@ from database import Base
 class User(Base):
     __tablename__ = "users"
 
-    id = Column(Integer, primary_key= True, Index = True)
-    username = Column(String, unique= True, Index = True)
-    emial = Column(String, unique= True, Index = True)
+    id = Column(Integer, primary_key= True, index = True)
+    username = Column(String, unique= True, index = True)
+    emial = Column(String, unique= True, index = True)
     password = Column(String)
 
     posts = relationship("Post", back_populates="owner")
