@@ -9,7 +9,8 @@ export default defineConfig({
     tailwindcss(),
   ],
   server: {
-    port: 3000,
-    open: false,
+    host: true, // Exposes server to local network & WSL/Docker (0.0.0.0)
+    port: 5173,
+    strictPort: false,
   },
 });
