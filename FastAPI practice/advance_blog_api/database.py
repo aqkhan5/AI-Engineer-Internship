@@ -9,7 +9,7 @@ DATABASE_URL = os.getenv("neon_db")
 
 #  Correct: PostgreSQL handles concurrent threads natively
 engine = create_engine(DATABASE_URL)
-SessionLocal = sessionmaker(bind=engine, autoflush=False, autocomlete = False)
+SessionLocal = sessionmaker(bind=engine, autoflush=False)
 
 class Base(DeclarativeBase):
     pass
@@ -18,5 +18,5 @@ def get_db():
     db = SessionLocal()
     try:
         yield db
-    except:
+    finally:
         db.close()

@@ -42,7 +42,7 @@ def get_posts(db: Session = Depends(get_db)):
         for post in posts
     ]
 
-@router.put("/post_id",response_model= List[schemas.PostResponse])
+@router.put("/{post_id}",response_model= schemas.PostResponse)
 def update_post(
     post_id: int,
     updated_post: schemas.PostCreate,
@@ -50,6 +50,7 @@ def update_post(
     current_user: models.User = Depends(utils.verify_current_token)
     ):
     post = db.query(models.Post).filter(models.Post.id == post_id).first()
+
     if not post:
         raise HTTPException(
             status_code= 404,
@@ -75,8 +76,8 @@ def update_post(
     )
 
 # Delete post
-@router.delete("/post_id")
-def update_post(
+@router.delete("/{post_id}")
+def delete_post(
     post_id: int,
     db: Session = Depends(get_db),
     current_user: models.User = Depends(utils.verify_current_token)

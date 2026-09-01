@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, ConfigDict
 
 
 class UserCreate(BaseModel):
@@ -15,8 +15,7 @@ class UserResponse(BaseModel):
     username : str
     email: EmailStr
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 class PostCreate(BaseModel):
     title: str
@@ -28,5 +27,4 @@ class PostResponse(BaseModel):
     content: str
     author : str
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
