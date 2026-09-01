@@ -102,22 +102,7 @@ export default function ArticleCard({ post, onReadPost, index }) {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <div
-            style={{
-              width: '26px',
-              height: '26px',
-              borderRadius: '50%',
-              backgroundColor: 'var(--bg-subtle)',
-              border: '1px solid var(--border-hairline)',
-              color: 'var(--ink-primary)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '11px',
-              fontWeight: 700
-            }}
-            className="font-mono"
-          >
+          <div className="author-avatar avatar-xs">
             {post.author ? post.author.charAt(0).toUpperCase() : 'A'}
           </div>
           <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--ink-primary)' }}>

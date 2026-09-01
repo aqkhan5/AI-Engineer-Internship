@@ -190,7 +190,7 @@ export default function ArticleReader({
         position: 'fixed',
         inset: 0,
         zIndex: 2000,
-        backgroundColor: 'rgba(15, 23, 42, 0.7)',
+        backgroundColor: 'var(--bg-modal-overlay)',
         backdropFilter: 'blur(10px)',
         display: 'flex',
         alignItems: 'center',
@@ -236,7 +236,7 @@ export default function ArticleReader({
             justifyContent: 'space-between',
             padding: '16px 28px',
             borderBottom: '1px solid var(--border-hairline)',
-            backgroundColor: 'rgba(255, 255, 255, 0.95)',
+            backgroundColor: 'var(--bg-surface)',
             backdropFilter: 'blur(8px)',
             flexShrink: 0
           }}
@@ -381,21 +381,7 @@ export default function ArticleReader({
               }}
             >
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <div
-                  style={{
-                    width: '36px',
-                    height: '36px',
-                    borderRadius: '50%',
-                    backgroundColor: 'var(--ink-primary)',
-                    color: '#FFFFFF',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '13px',
-                    fontWeight: 700
-                  }}
-                  className="font-mono"
-                >
+                <div className="author-avatar avatar-lg">
                   {post.author ? post.author.charAt(0).toUpperCase() : 'A'}
                 </div>
                 <div>

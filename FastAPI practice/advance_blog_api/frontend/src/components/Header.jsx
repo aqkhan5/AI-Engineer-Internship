@@ -1,5 +1,6 @@
 import React from 'react';
 import { PenSquare, LogIn, UserPlus, LogOut, User, Activity, BookOpen } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 export default function Header({
   apiOnline,
@@ -7,7 +8,9 @@ export default function Header({
   onOpenAuth,
   onOpenEditor,
   onLogout,
-  postCount = 0
+  postCount = 0,
+  currentTheme,
+  onThemeChange
 }) {
   return (
     <header
@@ -15,13 +18,14 @@ export default function Header({
         position: 'sticky',
         top: 0,
         zIndex: 1000,
-        backgroundColor: 'rgba(248, 249, 250, 0.92)',
-        backdropFilter: 'blur(12px)',
+        backgroundColor: 'var(--bg-header)',
+        backdropFilter: 'blur(14px)',
+        WebkitBackdropFilter: 'blur(14px)',
         borderBottom: '1px solid var(--border-hairline)',
         height: 'var(--header-height)',
         display: 'flex',
         alignItems: 'center',
-        transition: 'all var(--transition-fast)'
+        transition: 'background-color var(--transition-fast), border-color var(--transition-fast)'
       }}
     >
       <div className="app-container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
@@ -69,7 +73,7 @@ export default function Header({
         </div>
 
         {/* Action Controls & Navigation */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           
           {/* Post count metric */}
           <div
@@ -79,7 +83,7 @@ export default function Header({
               gap: '6px',
               fontSize: '13px',
               color: 'var(--ink-secondary)',
-              marginRight: '8px'
+              marginRight: '4px'
             }}
             className="font-mono"
           >
@@ -87,13 +91,19 @@ export default function Header({
             <span>{postCount} {postCount === 1 ? 'Dispatch' : 'Dispatches'}</span>
           </div>
 
+          {/* Theme Mode Switcher (Light / Dark / System) */}
+          <ThemeToggle
+            currentTheme={currentTheme}
+            onThemeChange={onThemeChange}
+          />
+
           {/* Write / New Post CTA */}
           <button
             onClick={onOpenEditor}
             className="btn btn-primary"
-            style={{ padding: '8px 16px', fontSize: '13.5px' }}
+            style={{ padding: '8px 14px', fontSize: '13px' }}
           >
-            <PenSquare size={15} />
+            <PenSquare size={14} />
             <span>Write Story</span>
           </button>
 
@@ -110,24 +120,11 @@ export default function Header({
                   border: '1px solid var(--border-hairline)',
                   borderRadius: 'var(--radius-full)',
                   fontSize: '13px',
-                  fontWeight: 600
+                  fontWeight: 600,
+                  color: 'var(--ink-primary)'
                 }}
               >
-                <div
-                  style={{
-                    width: '24px',
-                    height: '24px',
-                    borderRadius: '50%',
-                    backgroundColor: 'var(--ink-primary)',
-                    color: '#FFFFFF',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    fontSize: '11px',
-                    fontWeight: 700
-                  }}
-                  className="font-mono"
-                >
+                <div className="author-avatar avatar-xs">
                   {user.username ? user.username.charAt(0).toUpperCase() : 'U'}
                 </div>
                 <span>{user.username}</span>
@@ -148,7 +145,7 @@ export default function Header({
               <button
                 onClick={() => onOpenAuth('login')}
                 className="btn btn-secondary"
-                style={{ padding: '8px 14px', fontSize: '13px' }}
+                style={{ padding: '8px 12px', fontSize: '13px' }}
               >
                 <LogIn size={14} />
                 <span>Sign in</span>
@@ -157,7 +154,7 @@ export default function Header({
               <button
                 onClick={() => onOpenAuth('signup')}
                 className="btn btn-accent"
-                style={{ padding: '8px 14px', fontSize: '13px' }}
+                style={{ padding: '8px 12px', fontSize: '13px' }}
               >
                 <UserPlus size={14} />
                 <span>Register</span>

@@ -102,7 +102,7 @@ export default function AuthModal({
         position: 'fixed',
         inset: 0,
         zIndex: 2500,
-        backgroundColor: 'rgba(15, 23, 42, 0.65)',
+        backgroundColor: 'var(--bg-modal-overlay)',
         backdropFilter: 'blur(8px)',
         display: 'flex',
         alignItems: 'center',

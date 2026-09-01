@@ -168,21 +168,7 @@ export default function HeroSpotlight({ featuredPost, onReadPost, onOpenEditor }
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
             {/* Author Attribution */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <div
-                style={{
-                  width: '34px',
-                  height: '34px',
-                  borderRadius: '50%',
-                  backgroundColor: 'var(--ink-primary)',
-                  color: '#FFFFFF',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontSize: '13px',
-                  fontWeight: 700
-                }}
-                className="font-mono"
-              >
+              <div className="author-avatar avatar-md">
                 {featuredPost.author ? featuredPost.author.charAt(0).toUpperCase() : 'A'}
               </div>
               <div>

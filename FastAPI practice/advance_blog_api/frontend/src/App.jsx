@@ -15,6 +15,11 @@ export default function App() {
   const [loadingPosts, setLoadingPosts] = useState(true);
   const [toast, setToast] = useState(null);
 
+  // Theme Mode State ('light' | 'dark' | 'system')
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem('ink_theme') || 'system';
+  });
+
   // Modal States
   const [isEditorOpen, setIsEditorOpen] = useState(false);
   const [editingPost, setEditingPost] = useState(null);
@@ -27,6 +32,18 @@ export default function App() {
     setTimeout(() => {
       setToast(null);
     }, 4500);
+  };
+
+  // Synchronize theme to document element and localStorage
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('ink_theme', theme);
+  }, [theme]);
+
+  const handleThemeChange = (newTheme) => {
+    setTheme(newTheme);
+    const label = newTheme === 'dark' ? 'Dark' : newTheme === 'light' ? 'Light' : 'System Default';
+    showToast(`Switched appearance to ${label} mode.`, 'info');
   };
 
   // Fetch articles from FastAPI
@@ -123,7 +140,7 @@ export default function App() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      {/* Section 1: Masthead Header */}
+      {/* Section 1: Masthead Header with Theme Switcher */}
       <Header
         apiOnline={apiOnline}
         user={user}
@@ -131,6 +148,8 @@ export default function App() {
         onOpenEditor={() => handleOpenEditor(null)}
         onLogout={handleLogout}
         postCount={posts.length}
+        currentTheme={theme}
+        onThemeChange={handleThemeChange}
       />
 
       {/* Main Canvas Container */}
