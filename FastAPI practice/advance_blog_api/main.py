@@ -28,4 +28,3 @@ app.include_router(users_router)
 # Mount React Frontend if built
 if os.path.exists("frontend/dist"):
     app.mount("/", StaticFiles(directory="frontend/dist", html=True), name="frontend")
-
