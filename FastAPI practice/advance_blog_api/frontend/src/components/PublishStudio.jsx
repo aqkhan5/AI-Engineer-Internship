@@ -192,7 +192,7 @@ export default function PublishStudio({
         position: 'fixed',
         inset: 0,
         zIndex: 2000,
-        backgroundColor: 'rgba(15, 23, 42, 0.65)',
+        backgroundColor: 'var(--bg-modal-overlay)',
         backdropFilter: 'blur(8px)',
         display: 'flex',
         alignItems: 'center',
@@ -496,21 +496,7 @@ export default function PublishStudio({
                     marginBottom: '24px'
                   }}
                 >
-                  <div
-                    style={{
-                      width: '28px',
-                      height: '28px',
-                      borderRadius: '50%',
-                      backgroundColor: 'var(--ink-primary)',
-                      color: '#FFFFFF',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      fontSize: '12px',
-                      fontWeight: 700
-                    }}
-                    className="font-mono"
-                  >
+                  <div className="author-avatar avatar-sm">
                     {user?.username ? user.username.charAt(0).toUpperCase() : 'U'}
                   </div>
                   <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--ink-primary)' }}>
