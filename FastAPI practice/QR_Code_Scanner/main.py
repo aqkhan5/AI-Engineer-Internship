@@ -31,7 +31,7 @@ async def generate_qr(request: Request):
     qr.add_data(text)
     qr.make(fit=True)
 
-    img = qr.make_image(fill_collor = "black", back_color = "white")
+    img = qr.make_image(fill_color="black", back_color="white")
 
     buffer = io.BytesIO()
     img.save(buffer, format="PNG")
