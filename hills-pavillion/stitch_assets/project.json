@@ -1,0 +1,328 @@
+{
+  "createTime": "2026-09-20T17:47:44.243974Z",
+  "designTheme": {
+    "bodyFont": "PLUS_JAKARTA_SANS",
+    "bodyFontFamily": "Plus Jakarta Sans",
+    "colorMode": "LIGHT",
+    "colorVariant": "FIDELITY",
+    "customColor": "#121314",
+    "designMd": "---\nname: Hills Pavillion\ncolors:\n  surface: '#faf9f7'\n  surface-dim: '#dadad8'\n  surface-bright: '#faf9f7'\n  surface-container-lowest: '#ffffff'\n  surface-container-low: '#f4f3f1'\n  surface-container: '#efeeec'\n  surface-container-high: '#e9e8e6'\n  surface-container-highest: '#e3e2e0'\n  on-surface: '#1a1c1b'\n  on-surface-variant: '#44474a'\n  inverse-surface: '#2f3130'\n  inverse-on-surface: '#f1f1ef'\n  outline: '#75777a'\n  outline-variant: '#c5c6c9'\n  surface-tint: '#5e5e5f'\n  primary: '#000000'\n  on-primary: '#ffffff'\n  primary-container: '#1b1c1d'\n  on-primary-container: '#848485'\n  inverse-primary: '#c7c6c7'\n  secondary: '#6f5b42'\n  on-secondary: '#ffffff'\n  secondary-container: '#f7dbbb'\n  on-secondary-container: '#745f46'\n  tertiary: '#000000'\n  on-tertiary: '#ffffff'\n  tertiary-container: '#1c1b19'\n  on-tertiary-container: '#86837f'\n  error: '#ba1a1a'\n  on-error: '#ffffff'\n  error-container: '#ffdad6'\n  on-error-container: '#93000a'\n  primary-fixed: '#e3e2e3'\n  primary-fixed-dim: '#c7c6c7'\n  on-primary-fixed: '#1b1c1d'\n  on-primary-fixed-variant: '#464748'\n  secondary-fixed: '#fadebe'\n  secondary-fixed-dim: '#ddc2a3'\n  on-secondary-fixed: '#271905'\n  on-secondary-fixed-variant: '#56442c'\n  tertiary-fixed: '#e6e2dd'\n  tertiary-fixed-dim: '#cac6c1'\n  on-tertiary-fixed: '#1c1b19'\n  on-tertiary-fixed-variant: '#484743'\n  background: '#faf9f7'\n  on-background: '#1a1c1b'\n  surface-variant: '#e3e2e0'\ntypography:\n  display-hero:\n    fontFamily: Bodoni Moda\n    fontSize: 84px\n    fontWeight: '400'\n    lineHeight: 92px\n    letterSpacing: -0.02em\n  display-hero-mobile:\n    fontFamily: Bodoni Moda\n    fontSize: 44px\n    fontWeight: '400'\n    lineHeight: 50px\n    letterSpacing: -0.01em\n  headline-xl:\n    fontFamily: Bodoni Moda\n    fontSize: 56px\n    fontWeight: '400'\n    lineHeight: 64px\n    letterSpacing: -0.015em\n  headline-xl-mobile:\n    fontFamily: Bodoni Moda\n    fontSize: 34px\n    fontWeight: '400'\n    lineHeight: 40px\n    letterSpacing: -0.01em\n  headline-lg:\n    fontFamily: Bodoni Moda\n    fontSize: 40px\n    fontWeight: '400'\n    lineHeight: 48px\n    letterSpacing: -0.01em\n  headline-lg-mobile:\n    fontFamily: Bodoni Moda\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n    letterSpacing: 0em\n  headline-md:\n    fontFamily: Bodoni Moda\n    fontSize: 28px\n    fontWeight: '400'\n    lineHeight: 36px\n    letterSpacing: 0em\n  headline-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 20px\n    fontWeight: '500'\n    lineHeight: 28px\n    letterSpacing: 0.01em\n  subheading-editorial:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 12px\n    fontWeight: '600'\n    lineHeight: 18px\n    letterSpacing: 0.22em\n  body-lead:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 18px\n    fontWeight: '300'\n    lineHeight: 30px\n    letterSpacing: -0.005em\n  body-default:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 15px\n    fontWeight: '400'\n    lineHeight: 26px\n    letterSpacing: 0.005em\n  body-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 13px\n    fontWeight: '400'\n    lineHeight: 20px\n    letterSpacing: 0.01em\n  label-index:\n    fontFamily: Bodoni Moda\n    fontSize: 18px\n    fontWeight: '400'\n    lineHeight: 22px\n    letterSpacing: 0.05em\n  label-caps:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 11px\n    fontWeight: '600'\n    lineHeight: 14px\n    letterSpacing: 0.2em\n  button-text:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 12px\n    fontWeight: '500'\n    lineHeight: 16px\n    letterSpacing: 0.18em\nspacing:\n  gutter: 2rem\n  margin: 4rem\n  space-xs: 0.375rem\n  space-sm: 0.75rem\n  space-md: 1.5rem\n  space-lg: 2.5rem\n  space-xl: 4.5rem\n---\n\n## Brand & Style\n\nThis design system expresses quiet architectural permanence, restrained grandeur, and artisanal precision. Drawing aesthetic inspiration from masters of monolithic warmth and spatial contemplation—Aman Resorts, David Chipperfield Architects, and Olson Kundig—the visual identity serves ultra-high-net-worth patrons, discerning collectors, and global design tastemakers. \n\nThe emotional response evoked must be serenity, structural substance, and timeless prestige. The design deliberately eschews ephemeral tech trends, excessive decorations, skeuomorphic gestures, and rounded app-like silhouettes. Instead, it balances high-end editorial layouts with disciplined structural proportion. Whitespace functions as architectural void—a deliberate physical material that frames photography, bespoke typographies, and curated property developments.\n\nKey stylistic tenets:\n- **Tonal Monolithism:** Surfaces evoke honed travertine, smooth limestone, raw blackened steel, and linen.\n- **Architectural Cadence:** Grids mimic elevations and floor-plan draftings through razor-thin borders, deliberate structural rhythms, and indexed metadata tags.\n- **Tactile Reserve:** Interactions are slow, intentional, and weighted. Micro-transitions reflect smooth gallery transitions rather than bouncy digital kinetics.\n\n## Colors\n\nThe palette is derived from geologic and architectural materiality: cut limestone, patinated bronze, muted travertine, and blackened structural steel. \n\n- **Primary Canvas & Tonal Surfaces:**\n  - Base Background: Warm limestone `#F9F8F6`.\n  - Secondary Surface / Muted Field: `#F3F1ED`.\n  - Contrast Background (Dark Architectural Insets): `#121314` and `#1C1D1F`.\n  - Elevated Crisp Surface: Pure `#FFFFFF` for select floating editorial panes, gallery frames, and light-mode modal planes.\n\n- **Primary & Structural Ink:**\n  - Dominant Ink / Text: Deep carbon `#121314` delivering maximum legible clarity without the clinical sterility of pure pitch black.\n  - Secondary Text / Subtitle: Muted basalt `#54524F`.\n  - Dark Canvas Typographic Base: Crisp White `#FFFFFF` with muted secondary `#C4B5A0` and `#A09C96`.\n\n- **Muted Stone & Hairlines:**\n  - Hairline Borders & Architectural Dividers: `#E5E2DC` on light canvases; `rgba(255, 255, 255, 0.12)` on dark canvases.\n  - Surface Tonal Accent: `#D3CFCA` for chips, disabled indicators, and structural grid rules.\n\n- **Accents:**\n  - Subtle Pale Bronze: `#9E876B` (with dark variant `#8C775D` and wash `#C4B5A0`). Used with surgical discipline solely for index numbers (`01`, `02`), architectural categorization badges, selected interactive states, and metadata labels. Loud, bright gold is strictly forbidden.\n\n## Typography\n\nTypography functions as the primary architectural element of the page. The system juxtaposes the statuesque editorial elegance of **Bodoni Moda** with the balanced geometric clarity of **Plus Jakarta Sans**.\n\n### Usage Guidelines:\n- **Headlines & Editorial Statements:** Set Bodoni Moda with intentional negative tracking in large scale to articulate monumental prestige. Keep titles concise, poetic, and architectural.\n- **Editorial Subheadings & Taxonomy (`subheading-editorial` / `label-caps`):** Render in full uppercase with generous tracking (`0.18em` to `0.22em`). Used above headlines, on architectural breadcrumbs, and across navigation.\n- **Architectural Indices (`label-index`):** Use Bodoni Moda for numbered sequences (`01`, `02`, `03`) to designate sections, floor levels, or development phases.\n- **Body & Long Form:** Set Plus Jakarta Sans in light (`300`) and regular (`400`) weights with airy line-height (`1.6`–`1.7x`) to establish calm reading rhythms.\n\n## Layout & Spacing\n\nThe layout model emulates museum curation and high-end monographs, structured via a disciplined 12-column grid.\n\n- **Desktop (1200px+):** 12-column layout with generous outer margins (`4rem` to `6rem`) and `2rem` gutters. Significant structural sections employ rhythmic vertical padding up to `8rem` to produce an expansive gallery cadence.\n- **Tablet (768px - 1199px):** 8-column layout with `2.5rem` margins and `1.5rem` gutters. Multi-column editorial modules consolidate into symmetrical 2-column or full-width blocks.\n- **Mobile (Below 768px):** 4-column layout with `1.25rem` margins and `1rem` gutters. Hero layouts stack vertically, with image-to-text ratios balanced to prevent visual clutter.\n\nEditorial alignment relies heavily on asymmetrical column spans: e.g., a 4-column descriptive metadata block set parallel to an 8-column cinematic bleed photograph. Horizontal borders (`1px` `#E5E2DC`) frame thematic tiers to enforce grid structure across viewports.\n\n## Elevation & Depth\n\nThis design system rejects heavy, rounded drop shadows and artificial blur layers. Visual hierarchy is established via **architectural tonal layering** and **delicate structural boundaries**.\n\n- **Surface Tiers:**\n  - Base layer: Honed limestone `#F9F8F6`.\n  - Mid layer (Cards & Content Insets): `#FFFFFF` or `#F3F1ED`.\n  - Contrast layer (Thematic Pavilions): Deep charcoal `#121314`.\n- **Structural Outlines:** Depth and containment are articulated through crisp, 1px low-contrast hairpins (`#E5E2DC` against light fields; `rgba(255, 255, 255, 0.12)` against charcoal fields).\n- **Subtle Ambient Lift:** Where layered elevation is structurally necessary (e.g., active dropdown menus, flyout booking drawers, image lightboxes), use a razor-sharp, diffused shadow:\n  - `box-shadow: 0 16px 40px -8px rgba(18, 19, 20, 0.06);`\n  - Zero heavy dark shadows or colored glows are permitted.\n\n## Shapes\n\nIn alignment with minimalist architecture, the shape profile is clean, monolithic, and uncompromisingly **sharp (0px roundedness)**.\n\nAll structural containers, buttons, cards, images, badges, and input fields adopt crisp right angles. This creates structural harmony with full-bleed architectural photography, strict grid divisions, and clean stone surfaces.\n\n## Components\n\n### 1. Navigation Bar\n- **Bar Anatomy:** Full-width fixed header with ultra-subtle border-bottom (`1px solid #E5E2DC`). Limestone background (`#F9F8F6`) with high-transparency glass opacity fallback (`backdrop-filter: blur(8px)`).\n- **Branding:** Architectural logotype 'HILLS PAVILLION' in Bodoni Moda or high-tracked uppercase, paired with miniature architectural descriptor ('ATELIER / 2025').\n- **Navigation Links:** Uppercase `label-caps` with spacious horizontal margin (`1.5rem`). Micro hover state features an ultra-thin pale bronze underline sliding horizontally.\n- **Action:** Discreet primary button 'BOOK A VISIT' styled with minimal dark boundary.\n\n### 2. Buttons\n- **Primary:** Solid carbon `#121314` background, crisp white `#FFFFFF` uppercase tracked label, sharp 0px corners, height `48px`, horizontal padding `2rem`. Hover: fades smoothly to `#2C2D30`.\n- **Secondary (Architectural Wireframe):** Transparent background, hairline 1px border (`#121314` or `#E5E2DC`), dark carbon label. Hover: border shifts to pale bronze `#9E876B`, text shifts to bronze.\n- **Minimal Arrow Link:** Inline typography followed by a refined glyph or 1px hairline right arrow (`→`). Hover: subtle 4px translation to the right.\n\n### 3. Architectural Project Cards\n- **Structure:** 0px radius container with a cinematic aspect ratio (16:10 or 4:5) image container.\n- **Image Treatment:** Desaturated, natural-light architectural imagery with a delicate 1px border. Hover initiates a slow 700ms ease zoom (scale `1.03`).\n- **Card Metadata:** Below the visual asset, an architectural taxonomy header:\n  - Top row: Pale bronze index (`01`) left-aligned; typology/location (`RESIDENCES — ENGADIN, SWITZERLAND`) right-aligned in `label-caps`.\n  - Middle row: Project name in `headline-md` Bodoni Moda.\n  - Bottom row: Subtle horizontal line delimiter, followed by specs (e.g., `COMPLETION 2026 / 8 PAVILIONS`).\n\n### 4. Editorial Counters & Trust Grid\n- Multi-column metric grid separated by 1px vertical and horizontal grid lines (`#E5E2DC`).\n- Large numeric figure set in Bodoni Moda (`display-hero` or `headline-xl`) in carbon or pale bronze.\n- Metric classification set below in uppercase `label-caps` (`ESTATES DELIVERED`, `ACRES PRESERVED`).\n\n### 5. Input Fields & Inquiries\n- **Field Anatomy:** Hairline underline only (`border-bottom: 1px solid #D3CFCA`) or full minimal sharp box (`1px solid #E5E2DC`) with limestone canvas.\n- **Text:** Plus Jakarta Sans `14px`, carbon `#121314`. Floating placeholder in light muted bronze `#8C775D`.\n- **Focus State:** 1px border color transition to carbon `#121314`. Zero outer box-shadow or neon focus rings.\n\n### 6. Chips & Metadata Badges\n- Sharp rectangular tag with 1px border (`#D3CFCA`), no fill or pure white fill.\n- Typographic style: `label-caps`, uppercase, pale bronze or charcoal text. \n- Padding: `4px 10px`.\n\n### 7. Global Architectural Footer\n- Deep carbon `#121314` canvas with pale bronze and white typographic hierarchy.\n- Global atelier coordinates (e.g., Zurich, London, Kyoto) arranged in strict 4-column layout with local time zones.\n- Newsletter inscription module: minimalist integrated input with hairline underline and text link action 'SUBSCRIBE'.\n- Sub-footer with legal notice, copyright, and subtle micro-statement: 'Building Places. Creating Legacies.'",
+    "font": "BODONI_MODA",
+    "headlineFont": "BODONI_MODA",
+    "headlineFontFamily": "Bodoni Moda",
+    "labelFont": "PLUS_JAKARTA_SANS",
+    "labelFontFamily": "Plus Jakarta Sans",
+    "namedColors": {
+      "background": "#faf9f7",
+      "error": "#ba1a1a",
+      "error_container": "#ffdad6",
+      "inverse_on_surface": "#f1f1ef",
+      "inverse_primary": "#c7c6c7",
+      "inverse_surface": "#2f3130",
+      "on_background": "#1a1c1b",
+      "on_error": "#ffffff",
+      "on_error_container": "#93000a",
+      "on_primary": "#ffffff",
+      "on_primary_container": "#848485",
+      "on_primary_fixed": "#1b1c1d",
+      "on_primary_fixed_variant": "#464748",
+      "on_secondary": "#ffffff",
+      "on_secondary_container": "#745f46",
+      "on_secondary_fixed": "#271905",
+      "on_secondary_fixed_variant": "#56442c",
+      "on_surface": "#1a1c1b",
+      "on_surface_variant": "#44474a",
+      "on_tertiary": "#ffffff",
+      "on_tertiary_container": "#86837f",
+      "on_tertiary_fixed": "#1c1b19",
+      "on_tertiary_fixed_variant": "#484743",
+      "outline": "#75777a",
+      "outline_variant": "#c5c6c9",
+      "primary": "#000000",
+      "primary_container": "#1b1c1d",
+      "primary_fixed": "#e3e2e3",
+      "primary_fixed_dim": "#c7c6c7",
+      "secondary": "#6f5b42",
+      "secondary_container": "#f7dbbb",
+      "secondary_fixed": "#fadebe",
+      "secondary_fixed_dim": "#ddc2a3",
+      "surface": "#faf9f7",
+      "surface_bright": "#faf9f7",
+      "surface_container": "#efeeec",
+      "surface_container_high": "#e9e8e6",
+      "surface_container_highest": "#e3e2e0",
+      "surface_container_low": "#f4f3f1",
+      "surface_container_lowest": "#ffffff",
+      "surface_dim": "#dadad8",
+      "surface_tint": "#5e5e5f",
+      "surface_variant": "#e3e2e0",
+      "tertiary": "#000000",
+      "tertiary_container": "#1c1b19",
+      "tertiary_fixed": "#e6e2dd",
+      "tertiary_fixed_dim": "#cac6c1"
+    },
+    "overrideNeutralColor": "#f9f8f6",
+    "overridePrimaryColor": "#121314",
+    "overrideSecondaryColor": "#9e876b",
+    "overrideTertiaryColor": "#d3cfca",
+    "spacing": {
+      "gutter": "2rem",
+      "margin": "4rem",
+      "space-lg": "2.5rem",
+      "space-md": "1.5rem",
+      "space-sm": "0.75rem",
+      "space-xl": "4.5rem",
+      "space-xs": "0.375rem"
+    },
+    "spacingScale": 2,
+    "typography": {
+      "body-default": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "15px",
+        "fontWeight": "400",
+        "letterSpacing": "0.005em",
+        "lineHeight": "26px"
+      },
+      "body-lead": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "18px",
+        "fontWeight": "300",
+        "letterSpacing": "-0.005em",
+        "lineHeight": "30px"
+      },
+      "body-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "letterSpacing": "0.01em",
+        "lineHeight": "20px"
+      },
+      "button-text": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "12px",
+        "fontWeight": "500",
+        "letterSpacing": "0.18em",
+        "lineHeight": "16px"
+      },
+      "display-hero": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "84px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.02em",
+        "lineHeight": "92px"
+      },
+      "display-hero-mobile": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "44px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.01em",
+        "lineHeight": "50px"
+      },
+      "headline-lg": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "40px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.01em",
+        "lineHeight": "48px"
+      },
+      "headline-lg-mobile": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "letterSpacing": "0em",
+        "lineHeight": "36px"
+      },
+      "headline-md": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "28px",
+        "fontWeight": "400",
+        "letterSpacing": "0em",
+        "lineHeight": "36px"
+      },
+      "headline-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "20px",
+        "fontWeight": "500",
+        "letterSpacing": "0.01em",
+        "lineHeight": "28px"
+      },
+      "headline-xl": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "56px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.015em",
+        "lineHeight": "64px"
+      },
+      "headline-xl-mobile": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "34px",
+        "fontWeight": "400",
+        "letterSpacing": "-0.01em",
+        "lineHeight": "40px"
+      },
+      "label-caps": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "11px",
+        "fontWeight": "600",
+        "letterSpacing": "0.2em",
+        "lineHeight": "14px"
+      },
+      "label-index": {
+        "fontFamily": "Bodoni Moda",
+        "fontSize": "18px",
+        "fontWeight": "400",
+        "letterSpacing": "0.05em",
+        "lineHeight": "22px"
+      },
+      "subheading-editorial": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "12px",
+        "fontWeight": "600",
+        "letterSpacing": "0.22em",
+        "lineHeight": "18px"
+      }
+    }
+  },
+  "deviceType": "DESKTOP",
+  "metadata": {
+    "userRole": "OWNER"
+  },
+  "name": "projects/6338356329217012266",
+  "origin": "STITCH",
+  "projectType": "TEXT_TO_UI_PRO",
+  "screenInstances": [
+    {
+      "height": 11423,
+      "id": "11a63dc2198447d48433241e72e9bffd",
+      "sourceScreen": "projects/6338356329217012266/screens/11a63dc2198447d48433241e72e9bffd",
+      "width": 1280,
+      "x": 4480
+    },
+    {
+      "height": 10557,
+      "id": "15bd2284614c4a61bf58ca485f28da60",
+      "sourceScreen": "projects/6338356329217012266/screens/15bd2284614c4a61bf58ca485f28da60",
+      "width": 1280,
+      "x": 8896
+    },
+    {
+      "height": 6241,
+      "id": "3bedf7ca95224550ad27ceb1df4418a5",
+      "sourceScreen": "projects/6338356329217012266/screens/3bedf7ca95224550ad27ceb1df4418a5",
+      "width": 1280,
+      "x": 6976
+    },
+    {
+      "height": 68,
+      "id": "3ebffdc5a84240cfbab9083fd2222e03",
+      "sourceScreen": "projects/6338356329217012266/screens/3ebffdc5a84240cfbab9083fd2222e03",
+      "width": 320,
+      "x": 1024
+    },
+    {
+      "height": 2252,
+      "id": "5c576adf8124481abd60688330591d04",
+      "sourceScreen": "projects/6338356329217012266/screens/5c576adf8124481abd60688330591d04",
+      "width": 1280,
+      "x": 11584
+    },
+    {
+      "height": 286,
+      "id": "66d25f7075ce478eae67fa61ae2db7eb",
+      "sourceScreen": "projects/6338356329217012266/screens/66d25f7075ce478eae67fa61ae2db7eb",
+      "width": 512,
+      "x": 8320
+    },
+    {
+      "height": 382,
+      "id": "7390662bc7bc40d4b30070bd022ae5d4",
+      "sourceScreen": "projects/6338356329217012266/screens/7390662bc7bc40d4b30070bd022ae5d4",
+      "width": 512,
+      "x": 2752
+    },
+    {
+      "height": 3893,
+      "id": "74c918b4ec1640229387c148ceb938b3",
+      "sourceScreen": "projects/6338356329217012266/screens/74c918b4ec1640229387c148ceb938b3",
+      "width": 1280,
+      "x": 12928
+    },
+    {
+      "height": 286,
+      "id": "9045852a1a984d93943bc71d94a9625b",
+      "sourceScreen": "projects/6338356329217012266/screens/9045852a1a984d93943bc71d94a9625b",
+      "width": 512,
+      "x": 3328
+    },
+    {
+      "height": 540,
+      "id": "assets_fb13cc99f83f4c789fb7aa5833b45e94",
+      "sourceAsset": "assets/fb13cc99f83f4c789fb7aa5833b45e94",
+      "type": "DESIGN_SYSTEM_INSTANCE",
+      "width": 960
+    },
+    {
+      "height": 286,
+      "id": "b158f37442334254887a382db650c7f6",
+      "sourceScreen": "projects/6338356329217012266/screens/b158f37442334254887a382db650c7f6",
+      "width": 512,
+      "x": 3904
+    },
+    {
+      "height": 286,
+      "id": "b25a779cbcfe4e80820e84f8a8a88072",
+      "sourceScreen": "projects/6338356329217012266/screens/b25a779cbcfe4e80820e84f8a8a88072",
+      "width": 512,
+      "x": 5824
+    },
+    {
+      "height": 7729,
+      "id": "b318b27f4a8c47ad91d4287f3b483519",
+      "sourceScreen": "projects/6338356329217012266/screens/b318b27f4a8c47ad91d4287f3b483519",
+      "width": 1280,
+      "x": 1408
+    },
+    {
+      "height": 382,
+      "id": "be4b3c0104bb4c6b8fc459ec37a92fc6",
+      "sourceScreen": "projects/6338356329217012266/screens/be4b3c0104bb4c6b8fc459ec37a92fc6",
+      "width": 512,
+      "x": 6400
+    },
+    {
+      "height": 2257,
+      "id": "cacf5e81027b403bbc21d1e763783b9a",
+      "sourceScreen": "projects/6338356329217012266/screens/cacf5e81027b403bbc21d1e763783b9a",
+      "width": 1280,
+      "x": 15616
+    },
+    {
+      "height": 2755,
+      "id": "da26bbc21369415a93e2871e0199061f",
+      "sourceScreen": "projects/6338356329217012266/screens/da26bbc21369415a93e2871e0199061f",
+      "width": 1280,
+      "x": 14272
+    },
+    {
+      "height": 3869,
+      "id": "e02e6f430ce9474c8467719ac305f086",
+      "sourceScreen": "projects/6338356329217012266/screens/e02e6f430ce9474c8467719ac305f086",
+      "width": 1280,
+      "x": 16960
+    },
+    {
+      "height": 7432,
+      "id": "f137363b2c5041ee82445dc384dc9f0b",
+      "sourceScreen": "projects/6338356329217012266/screens/f137363b2c5041ee82445dc384dc9f0b",
+      "width": 1280,
+      "x": 10240
+    }
+  ],
+  "thumbnailScreenshot": {
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1X4Um7LMz6Fs9EhcCGP6b-U7vJCpfC33ec6NycPbmqO_hdOHGxxG08_aTp5fQRqP7gonvzDNXlPaZOecBxKJ2T2QTRIqU9zf--XO-1E1grKkF4VqmRNq9YE2Gj3Sn0yivcM9fhJ5ANqIjNZukNZaxfVC6v_Lq5r7vWB2Y7-9vK94ctAA-9ogZF7lciUfLP2Nh9bakPZRx6G0_4PfKPj86zZEhweGKNJyZVlMtFk3MVN7C7HAWnS46XnTv4",
+    "name": "projects/6338356329217012266/screens/ee4dac6df36fc11accd9351016bf7c42efad9ae709f5d835d5af75517fe4077a/fileEntries/screenshot"
+  },
+  "title": "Hills Pavillion Brand Experience",
+  "updateTime": "2026-09-20T18:32:42.602463Z",
+  "visibility": "PRIVATE"
+}

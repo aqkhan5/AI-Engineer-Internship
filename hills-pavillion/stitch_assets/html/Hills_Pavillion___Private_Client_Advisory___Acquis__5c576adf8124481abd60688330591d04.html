@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "primary-container": "#1b1c1d",
+          "surface-container-highest": "#e3e2e0",
+          "secondary-container": "#f7dbbb",
+          "surface-container-lowest": "#ffffff",
+          "tertiary-fixed-dim": "#cac6c1",
+          "surface-bright": "#faf9f7",
+          "surface-dim": "#dadad8",
+          "primary-fixed": "#e3e2e3",
+          "on-primary-container": "#848485",
+          "on-background": "#1a1c1b",
+          "on-primary-fixed-variant": "#464748",
+          "error-container": "#ffdad6",
+          "tertiary-fixed": "#e6e2dd",
+          "on-primary": "#ffffff",
+          "on-secondary-fixed-variant": "#56442c",
+          "primary-fixed-dim": "#c7c6c7",
+          "background": "#faf9f7",
+          "on-tertiary-fixed-variant": "#484743",
+          "surface": "#faf9f7",
+          "inverse-on-surface": "#f1f1ef",
+          "secondary-fixed": "#fadebe",
+          "surface-container-high": "#e9e8e6",
+          "on-tertiary-container": "#86837f",
+          "on-secondary": "#ffffff",
+          "surface-tint": "#5e5e5f",
+          "tertiary": "#000000",
+          "inverse-primary": "#c7c6c7",
+          "tertiary-container": "#1c1b19",
+          "on-surface-variant": "#44474a",
+          "on-tertiary": "#ffffff",
+          "outline": "#75777a",
+          "inverse-surface": "#2f3130",
+          "primary": "#000000",
+          "surface-container-low": "#f4f3f1",
+          "on-tertiary-fixed": "#1c1b19",
+          "secondary-fixed-dim": "#ddc2a3",
+          "error": "#ba1a1a",
+          "on-secondary-fixed": "#271905",
+          "surface-variant": "#e3e2e0",
+          "on-primary-fixed": "#1b1c1d",
+          "on-error": "#ffffff",
+          "on-surface": "#1a1c1b",
+          "outline-variant": "#c5c6c9",
+          "secondary": "#6f5b42",
+          "on-secondary-container": "#745f46",
+          "surface-container": "#efeeec",
+          "on-error-container": "#93000a"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "2rem",
+          "space-sm": "0.75rem",
+          "margin": "4rem",
+          "space-md": "1.5rem",
+          "space-xl": "4.5rem",
+          "space-lg": "2.5rem",
+          "space-xs": "0.375rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Bodoni Moda"
+          ],
+          "headline-lg": [
+            "Bodoni Moda"
+          ],
+          "headline-xl-mobile": [
+            "Bodoni Moda"
+          ],
+          "label-index": [
+            "Bodoni Moda"
+          ],
+          "display-hero": [
+            "Bodoni Moda"
+          ],
+          "body-default": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero-mobile": [
+            "Bodoni Moda"
+          ],
+          "headline-xl": [
+            "Bodoni Moda"
+          ],
+          "body-lead": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "button-text": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Bodoni Moda"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-caps": [
+            "Plus Jakarta Sans"
+          ],
+          "subheading-editorial": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "34px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-index": [
+            "18px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0.05em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero": [
+            "84px",
+            {
+              "lineHeight": "92px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-default": [
+            "15px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-hero-mobile": [
+            "44px",
+            {
+              "lineHeight": "50px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lead": [
+            "18px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "300"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "500"
+            }
+          ],
+          "button-text": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.18em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-caps": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.2em",
+              "fontWeight": "600"
+            }
+          ],
+          "subheading-editorial": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.22em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-default text-body-default text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container"><header class="fixed top-0 left-0 right-0 w-full z-50 transition-all duration-500 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-4"><img alt="Refined architectural geometric wordmark and geometric monogram emblem for Hills Pavillion luxury real estate developer. Brand logo. - Primary color: #121314
+- Font: bodoniModa
+- Mode: light
+- Roundness: rounded-lg
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WHfQEC1F_nxT4RpMCkz6uRZ2IxvKOEXoVY6scIOpgBARMht0OSw9PnlejPTfiInT7DlhxGxNzt9UX5afoEdkQ0jQVuGSkcXYKgRgLN_xrrH2ZGX6GebySqYQhoKvkcORI2qnmC5fLuz3uN-FbfXdHaHWK8cyz82x0gXopam1beQfbOTow_6WGg7ihyYjC47DLJayZdvxcMg6G9n1QuI8LDLghwI5eLzSVReVutMpOQ"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight uppercase text-on-surface leading-none">Hills Pavillion</span><span class="font-subheading-editorial text-subheading-editorial uppercase tracking-widest text-secondary text-[10px] mt-0.5">Atelier / Architecture</span></div></div><nav class="hidden lg:flex items-center gap-8" data-active-classes="text-primary font-medium tracking-widest border-b border-primary pb-1"><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors duration-300" data-path="projects" href="#">Projects</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors duration-300" data-path="properties" href="#">Properties</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors duration-300" data-path="about" href="#">About</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors duration-300" data-path="construction" href="#">Construction</a><a class="font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-colors duration-300" data-path="media" href="#">Media</a></nav><div class="flex items-center gap-4"><a class="hidden sm:inline-flex items-center justify-center h-10 px-6 bg-primary-container text-on-primary font-button-text text-button-text uppercase tracking-widest transition-all duration-300 hover:bg-neutral-800" data-path="inquiries" href="#">Book a Visit</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Dossier Header Banner -->
+<section class="w-full bg-surface-bright pb-10">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Section Micro-Descriptor -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8">
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-subheading-editorial text-subheading-editorial uppercase tracking-widest text-secondary">
+              Private Client Advisory / Bespoke Acquisition Concierge
+            </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight uppercase max-w-3xl">
+            Let's find the right opportunity for you.
+          </h1>
+</div>
+<div class="max-w-md">
+<p class="font-body-lead text-body-lead text-on-surface-variant font-light">
+            An intelligent, confidential consultation framework designed to align discerning patrons with generative architectural estates, private commercial flagships, and off-market allocations.
+          </p>
+</div>
+</div>
+<!-- Live Step Progress Horizon -->
+<div class="grid grid-cols-5 gap-2 pt-6">
+<!-- Step 1 Indicator -->
+<button class="group text-left transition-all duration-300" id="step-nav-1" onclick="goToStep(1)" type="button">
+<div class="h-1 w-full bg-primary mb-3 transition-colors duration-300" id="step-bar-1"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest" id="step-num-1">Step 01</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary transition-colors hidden sm:inline">Interest</span>
+</div>
+</button>
+<!-- Step 2 Indicator -->
+<button class="group text-left transition-all duration-300" id="step-nav-2" onclick="goToStep(2)" type="button">
+<div class="h-1 w-full bg-surface-container-highest mb-3 transition-colors duration-300" id="step-bar-2"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-widest" id="step-num-2">Step 02</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary transition-colors hidden sm:inline">Monument</span>
+</div>
+</button>
+<!-- Step 3 Indicator -->
+<button class="group text-left transition-all duration-300" id="step-nav-3" onclick="goToStep(3)" type="button">
+<div class="h-1 w-full bg-surface-container-highest mb-3 transition-colors duration-300" id="step-bar-3"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-widest" id="step-num-3">Step 03</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary transition-colors hidden sm:inline">Parameters</span>
+</div>
+</button>
+<!-- Step 4 Indicator -->
+<button class="group text-left transition-all duration-300" id="step-nav-4" onclick="goToStep(4)" type="button">
+<div class="h-1 w-full bg-surface-container-highest mb-3 transition-colors duration-300" id="step-bar-4"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-widest" id="step-num-4">Step 04</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary transition-colors hidden sm:inline">Directive</span>
+</div>
+</button>
+<!-- Step 5 Indicator -->
+<button class="group text-left transition-all duration-300" id="step-nav-5" onclick="goToStep(5)" type="button">
+<div class="h-1 w-full bg-surface-container-highest mb-3 transition-colors duration-300" id="step-bar-5"></div>
+<div class="flex items-baseline justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-widest" id="step-num-5">Step 05</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant group-hover:text-primary transition-colors hidden sm:inline">Enrollment</span>
+</div>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Framework Split View -->
+<section class="w-full bg-surface py-8 lg:py-12">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- ======================= -->
+<!-- LEFT / INTERACTIVE COLUMN -->
+<!-- ======================= -->
+<div class="lg:col-span-8 flex flex-col space-y-8">
+<!-- Interactive Step Container -->
+<div class="bg-surface-container-lowest p-8 lg:p-12 shadow-sm relative">
+<!-- STEP 01: TYPOLOGICAL HORIZON -->
+<div class="step-pane flex flex-col space-y-8" id="step-view-1">
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Step 01 / 05</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Typology Discovery</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+                  What are you interested in?
+                </h2>
+<p class="font-body-default text-body-default text-on-surface-variant">
+                  Select your typological preference. Each pathway unlocks distinct private inventory and specialized advisory protocols.
+                </p>
+</div>
+<div class="grid grid-cols-1 gap-3 pt-2">
+<!-- Option I -->
+<button class="interest-card group w-full text-left p-6 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex items-start justify-between" onclick="selectInterest('Residential Sanctum', 'Private luxury villas, alpine residences &amp; lakefront sanctuaries')" type="button">
+<div class="space-y-1">
+<div class="flex items-center gap-3">
+<span class="font-label-index text-label-index text-secondary">I.</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase">Residential Sanctum</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-7">
+                      Private estates, lakefront penthouses, alpine retreats, and cliffside compounds engineered for permanent serenity.
+                    </p>
+</div>
+<span class="selection-check material-symbols-outlined text-primary opacity-0 group-hover:opacity-40 transition-opacity">check_circle</span>
+</button>
+<!-- Option II -->
+<button class="interest-card group w-full text-left p-6 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex items-start justify-between" onclick="selectInterest('Commercial Flagship', 'Bespoke family office pavilions &amp; cultural boutique flagships')" type="button">
+<div class="space-y-1">
+<div class="flex items-center gap-3">
+<span class="font-label-index text-label-index text-secondary">II.</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase">Commercial Flagship</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-7">
+                      Bespoke family office pavilions, private galleries, institutional atriums, and branded architectural headquarters.
+                    </p>
+</div>
+<span class="selection-check material-symbols-outlined text-primary opacity-0 group-hover:opacity-40 transition-opacity">check_circle</span>
+</button>
+<!-- Option III -->
+<button class="interest-card group w-full text-left p-6 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex items-start justify-between" onclick="selectInterest('Plot &amp; Monument Site', 'Virgin alpine land parcels &amp; coastal sanctuaries')" type="button">
+<div class="space-y-1">
+<div class="flex items-center gap-3">
+<span class="font-label-index text-label-index text-secondary">III.</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase">Plot &amp; Monument Site</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-7">
+                      Virgin alpine parcels, protected Mediterranean promontories, and generational freehold topography ready for design commissions.
+                    </p>
+</div>
+<span class="selection-check material-symbols-outlined text-primary opacity-0 group-hover:opacity-40 transition-opacity">check_circle</span>
+</button>
+<!-- Option IV -->
+<button class="interest-card group w-full text-left p-6 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex items-start justify-between" onclick="selectInterest('Capital Investment', 'Syndicated real asset development &amp; sovereign-grade yields')" type="button">
+<div class="space-y-1">
+<div class="flex items-center gap-3">
+<span class="font-label-index text-label-index text-secondary">IV.</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase">Capital Investment</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-7">
+                      Syndicated debt instruments, inflation-hedging stone and timber holdings, and institutional equity allocations.
+                    </p>
+</div>
+<span class="selection-check material-symbols-outlined text-primary opacity-0 group-hover:opacity-40 transition-opacity">check_circle</span>
+</button>
+<!-- Option V -->
+<button class="interest-card group w-full text-left p-6 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex items-start justify-between" onclick="selectInterest('Bespoke Commission', 'End-to-end master planning &amp; private atelier development')" type="button">
+<div class="space-y-1">
+<div class="flex items-center gap-3">
+<span class="font-label-index text-label-index text-secondary">V.</span>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase">Bespoke Commission</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pl-7">
+                      Complete greenfield architectural commissioning directly governed by the Hills Pavillion master atelier and founding partners.
+                    </p>
+</div>
+<span class="selection-check material-symbols-outlined text-primary opacity-0 group-hover:opacity-40 transition-opacity">check_circle</span>
+</button>
+</div>
+<!-- Step Navigation Action -->
+<div class="flex items-center justify-between pt-6">
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">Select a typological path to proceed</span>
+<button class="px-8 py-4 bg-primary text-on-primary font-button-text text-button-text uppercase tracking-widest hover:bg-neutral-800 transition-colors inline-flex items-center gap-2" onclick="goToStep(2)" type="button">
+                  Proceed to Projects
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 02: MONUMENT & GEOGRAPHY -->
+<div class="step-pane hidden flex-col space-y-8" id="step-view-2">
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Step 02 / 05</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Geographic Coordinates</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+                  Which project interests you?
+                </h2>
+<p class="font-body-default text-body-default text-on-surface-variant">
+                  Select a flagship monument from our active development monographs, or request an open multi-territory portfolio curation.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
+<!-- Monument 1 -->
+<button class="monument-card group text-left p-4 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex flex-col space-y-3" onclick="selectMonument('The Lacustrine Pavilions', 'Engadin Valley, Switzerland', 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&amp;fit=crop&amp;w=800&amp;q=80')" type="button">
+<div class="relative w-full h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern monolithic stone residence set against tranquil alpine lake and pine forest in Engadin Valley Switzerland. Minimalist warm architecture, rough-hewn stone columns, expansive reflection pool, sunset twilight lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvAzDYu-oqeLbZQ9EClO_rvjXmW81bKx6I-bTdS4fhKv_USxSTCX99tfdi_9P8DOR0JiPc3WypYL77mQ4HaIZmX3JG7rWe4CCFfYNx_f5SNXAVYsOivj8LvSJMDs8srTuTrqCFaSJonR-sJtX7Z_rc792jbC71GP9qjIE9S7K7EJfhIA5mr00by1w7N6W5ciPzFlMrIVXLb57E-Iq74mtTeTSXymQYKlaB1jU_AMhp9ph1QD6hPcwQ"/>
+<div class="absolute top-3 right-3 px-2 py-1 bg-surface-container-lowest text-primary font-label-caps text-[9px] uppercase tracking-wider">
+                      72% Completed
+                    </div>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] uppercase text-secondary block">Engadin Valley, Switzerland</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase">The Lacustrine Pavilions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">8 Private lakeside sanctuaries framed in local Valser quartzite.</p>
+</div>
+</button>
+<!-- Monument 2 -->
+<button class="monument-card group text-left p-4 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex flex-col space-y-3" onclick="selectMonument('The Belvedere Enclave', 'Cap d\'Antibes, France', 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&amp;fit=crop&amp;w=800&amp;q=80')" type="button">
+<div class="relative w-full h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Brutalist luxury stone pavilion overlooking the azure Mediterranean sea at Cap d Antibes France. Honed limestone walls, expansive sliding floor to ceiling glass, infinity reflection basin, golden hour glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPe3oy4oMXMaNtzzBpwxZIFTgD9KAQmYHa4jTBkhUFheGctGf3ifnYMrR-xDAhd4Qnc4zgJNgeEAFztgmSHbnqsrsBdoarbhYlat57xHhO4jr91oF6NKsHxa4TvgTvjonW6FIbvESjeukblR6dhIkUTE61fopcMdlZig4qXcaNSNUW2cjQSN5N8pJnXYin6HemhNPL2dGQ77Vf1UNAPKwHnlrXFN-fc80saraW2-HcQndFFXsjHM5W"/>
+<div class="absolute top-3 right-3 px-2 py-1 bg-surface-container-lowest text-primary font-label-caps text-[9px] uppercase tracking-wider">
+                      Now Selling
+                    </div>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] uppercase text-secondary block">Cap d'Antibes, France</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase">The Belvedere Enclave</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tiered cliffside sky solarium penthouses with private moorings.</p>
+</div>
+</button>
+<!-- Monument 3 -->
+<button class="monument-card group text-left p-4 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex flex-col space-y-3" onclick="selectMonument('The Aurelia Forum &amp; Flagship', 'Mayfair, London', 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&amp;fit=crop&amp;w=800&amp;q=80')" type="button">
+<div class="relative w-full h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Sculptural architectural commercial atrium flagship building in Mayfair London. High soaring double-height fluted limestone facade with bronze framed glass portals, museum quality interior illumination at dusk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvbX9iEuj1BAn9CUbpp5ha7tPggGANlsf17VjV5wyT0y2iQ3VFwoZX21Wvs6lMndgjEXAxifqUcH5ds1xTaigjpLzWa6nzkpZt5Ya9v3qxR_tqOBEG3yB9FJy8-1f2-BaEtq4aPnLaTLB7z4kEhcIkDDAshY8hED68N_Zmtn8d9fBs1POvFRrTjAl6ABokYyN08xE1cbTmm88mYxTdGtZIi60kkmEehmNB4siwrcqafxQ25WDmUZ8Q"/>
+<div class="absolute top-3 right-3 px-2 py-1 bg-surface-container-lowest text-primary font-label-caps text-[9px] uppercase tracking-wider">
+                      Commercial Allocation
+                    </div>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] uppercase text-secondary block">Mayfair, London</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase">The Aurelia Forum</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Four floors of ultra-prime family office pavilions &amp; private salon.</p>
+</div>
+</button>
+<!-- Monument 4 -->
+<button class="monument-card group text-left p-4 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex flex-col space-y-3" onclick="selectMonument('Villa Verona Monolith', 'Lake Como, Italy', 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&amp;fit=crop&amp;w=800&amp;q=80')" type="button">
+<div class="relative w-full h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Masterful private monolithic residence nestled in the alpine slopes above Lake Como Italy. Cantilevered blackened cedar and raw concrete terraces, zero edge water basin, misty moody twilight atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWJC3og9rkw4dVkkQbbntl_QQZhxQ_2gvm3kp3oU1dCHDVKEw-0Yvz6cwU6w6D1qhcj3_TcZSnniijLScI9IBc9r1XlWv6cjpGQeR4wfFOWf8EbjVOWqZpeWrWgLojIDjlh12zbWAceXAnLN8jzbRKL_q4t_vZMlIoPzLRc3qLbUO3o6K5bnlRZTkQMzLcxaI_g0cgS_P60T8aToVpTP-p_HQP7n5OfdqLClQMhi1tg0s5PRmTWTc1"/>
+<div class="absolute top-3 right-3 px-2 py-1 bg-surface-container-lowest text-primary font-label-caps text-[9px] uppercase tracking-wider">
+                      2026 Horizon
+                    </div>
+</div>
+<div class="space-y-1">
+<span class="font-label-caps text-[10px] uppercase text-secondary block">Lake Como, Italy</span>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase">Villa Verona Monolith</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Single-family estate encompassing 4 hectares of private shoreline.</p>
+</div>
+</button>
+</div>
+<!-- General Option -->
+<button class="monument-card group w-full text-left p-5 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex items-center justify-between" onclick="selectMonument('Open Portfolio Consultation', 'Global Discretionary Portfolio', '')" type="button">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase block">Open Portfolio Consultation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Allow our Senior Advisory Partners to curate matching developments according to your liquidity and residency mandates.</span>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]">explore</span>
+</button>
+<!-- Step Navigation Action -->
+<div class="flex items-center justify-between pt-6">
+<button class="px-6 py-4 bg-surface-container text-on-surface font-button-text text-button-text uppercase tracking-widest hover:bg-surface-container-high transition-colors inline-flex items-center gap-2" onclick="goToStep(1)" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                  Back
+                </button>
+<button class="px-8 py-4 bg-primary text-on-primary font-button-text text-button-text uppercase tracking-widest hover:bg-neutral-800 transition-colors inline-flex items-center gap-2" onclick="goToStep(3)" type="button">
+                  Spatial Parameters
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 03: SPATIAL PARAMETERS & CAPITAL -->
+<div class="step-pane hidden flex-col space-y-8" id="step-view-3">
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Step 03 / 05</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Spatial Specifications</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+                  What are you looking for?
+                </h2>
+<p class="font-body-default text-body-default text-on-surface-variant">
+                  Define your architectural scale, configuration, and intended capital allocation.
+                </p>
+</div>
+<!-- Sub-section A: Typological Format -->
+<div class="space-y-3">
+<label class="font-label-caps text-label-caps uppercase text-on-surface tracking-widest block">
+                  A. Architectural Format
+                </label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+<button class="param-btn-format p-3 text-center bg-surface-container-low hover:bg-surface-container font-body-sm text-body-sm uppercase transition-colors" onclick="setParam('format', 'Estate Villa', this)" type="button">
+                    Estate Villa
+                  </button>
+<button class="param-btn-format p-3 text-center bg-surface-container-low hover:bg-surface-container font-body-sm text-body-sm uppercase transition-colors" onclick="setParam('format', 'Sky Solarium Penthouse', this)" type="button">
+                    Sky Penthouse
+                  </button>
+<button class="param-btn-format p-3 text-center bg-surface-container-low hover:bg-surface-container font-body-sm text-body-sm uppercase transition-colors" onclick="setParam('format', 'Duplex Pavilion', this)" type="button">
+                    Duplex Pavilion
+                  </button>
+<button class="param-btn-format p-3 text-center bg-surface-container-low hover:bg-surface-container font-body-sm text-body-sm uppercase transition-colors" onclick="setParam('format', 'Raw Land Parcel', this)" type="button">
+                    Land Parcel
+                  </button>
+<button class="param-btn-format p-3 text-center bg-surface-container-low hover:bg-surface-container font-body-sm text-body-sm uppercase transition-colors" onclick="setParam('format', 'Commercial Suite', this)" type="button">
+                    Commercial Suite
+                  </button>
+<button class="param-btn-format p-3 text-center bg-surface-container-low hover:bg-surface-container font-body-sm text-body-sm uppercase transition-colors" onclick="setParam('format', 'Custom Masterplan', this)" type="button">
+                    Full Compound
+                  </button>
+</div>
+</div>
+<!-- Sub-section B: Spatial Dimension -->
+<div class="space-y-3 pt-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface tracking-widest block">
+                  B. Spatial Footprint / Dimension
+                </label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<button class="param-btn-scale text-left p-4 bg-surface-container-low hover:bg-surface-container transition-colors" onclick="setParam('scale', '300 - 500 m² (3,200 - 5,400 sq.ft)', this)" type="button">
+<span class="font-headline-sm text-[16px] text-on-surface block uppercase">300 – 500 m²</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Approx. 3,200 – 5,400 sq.ft interior footprint</span>
+</button>
+<button class="param-btn-scale text-left p-4 bg-surface-container-low hover:bg-surface-container transition-colors" onclick="setParam('scale', '500 - 800 m² (5,400 - 8,600 sq.ft)', this)" type="button">
+<span class="font-headline-sm text-[16px] text-on-surface block uppercase">500 – 800 m²</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Approx. 5,400 – 8,600 sq.ft interior footprint</span>
+</button>
+<button class="param-btn-scale text-left p-4 bg-surface-container-low hover:bg-surface-container transition-colors" onclick="setParam('scale', '800+ m² (8,600+ sq.ft)', this)" type="button">
+<span class="font-headline-sm text-[16px] text-on-surface block uppercase">800+ m² Grand Estate</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Over 8,600 sq.ft with staff quarters &amp; wellness wing</span>
+</button>
+<button class="param-btn-scale text-left p-4 bg-surface-container-low hover:bg-surface-container transition-colors" onclick="setParam('scale', 'Multi-Hectare Masterplan Compound', this)" type="button">
+<span class="font-headline-sm text-[16px] text-on-surface block uppercase">Multi-Hectare Compound</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Complete sovereign acreage with multiple pavilion wings</span>
+</button>
+</div>
+</div>
+<!-- Sub-section C: Capital Allocation -->
+<div class="space-y-3 pt-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface tracking-widest block">
+                  C. Intended Capital Allocation Horizon
+                </label>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+<button class="param-btn-capital p-4 text-center bg-surface-container-low hover:bg-surface-container transition-colors" onclick="setParam('capital', 'PKR 150M – 250M', this)" type="button">
+<span class="font-headline-sm text-[16px] text-on-surface block">PKR 150M – 250M</span>
+<span class="font-label-caps text-[9px] uppercase text-secondary">Base Tranche</span>
+</button>
+<button class="param-btn-capital p-4 text-center bg-surface-container-low hover:bg-surface-container transition-colors" onclick="setParam('capital', 'PKR 250M – 500M', this)" type="button">
+<span class="font-headline-sm text-[16px] text-on-surface block">PKR 250M – 500M</span>
+<span class="font-label-caps text-[9px] uppercase text-secondary">Prime Tranche</span>
+</button>
+<button class="param-btn-capital p-4 text-center bg-surface-container-low hover:bg-surface-container transition-colors" onclick="setParam('capital', 'PKR 500M – 1B', this)" type="button">
+<span class="font-headline-sm text-[16px] text-on-surface block">PKR 500M – 1B</span>
+<span class="font-label-caps text-[9px] uppercase text-secondary">Monumental Tier</span>
+</button>
+<button class="param-btn-capital p-4 text-center bg-surface-container-low hover:bg-surface-container transition-colors" onclick="setParam('capital', 'PKR 1B+', this)" type="button">
+<span class="font-headline-sm text-[16px] text-on-surface block">PKR 1B+</span>
+<span class="font-label-caps text-[9px] uppercase text-secondary">Sovereign Allocation</span>
+</button>
+<button class="param-btn-capital p-4 text-center bg-surface-container-low hover:bg-surface-container transition-colors sm:col-span-2" onclick="setParam('capital', 'Institutional Discretion', this)" type="button">
+<span class="font-headline-sm text-[16px] text-on-surface block">Discretionary / Family Office</span>
+<span class="font-label-caps text-[9px] uppercase text-secondary">Off-Market Private Ledger</span>
+</button>
+</div>
+</div>
+<!-- Step Navigation Action -->
+<div class="flex items-center justify-between pt-6">
+<button class="px-6 py-4 bg-surface-container text-on-surface font-button-text text-button-text uppercase tracking-widest hover:bg-surface-container-high transition-colors inline-flex items-center gap-2" onclick="goToStep(2)" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                  Back
+                </button>
+<button class="px-8 py-4 bg-primary text-on-primary font-button-text text-button-text uppercase tracking-widest hover:bg-neutral-800 transition-colors inline-flex items-center gap-2" onclick="goToStep(4)" type="button">
+                  Primary Directive
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 04: PRIMARY DIRECTIVE -->
+<div class="step-pane hidden flex-col space-y-8" id="step-view-4">
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Step 04 / 05</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Strategic Intent</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+                  What would you like to do?
+                </h2>
+<p class="font-body-default text-body-default text-on-surface-variant">
+                  Select your immediate objective to enable our Geneva desk to tailor documentation, site logistics, or legal frameworks.
+                </p>
+</div>
+<div class="grid grid-cols-1 gap-3 pt-2">
+<!-- Directive 1 -->
+<button class="directive-card group w-full text-left p-6 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex items-center justify-between" onclick="selectDirective('Book an Escorted Site Visit', 'Private on-site atelier walkthrough or helicopter landing reservation')" type="button">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">flight_takeoff</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase block">Book an Escorted Site Visit</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Private helicopter rendezvous or personal architectural tour with the project lead.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</button>
+<!-- Directive 2 -->
+<button class="directive-card group w-full text-left p-6 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex items-center justify-between" onclick="selectDirective('Request Structured Payment Plan &amp; Escrow Terms', 'Detailed stage-wise tranche schedules and Swiss escrow documentation')" type="button">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase block">Request Structured Payment Plan &amp; Escrow Terms</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Construction-linked disbursements governed by Swiss canton escrow standards.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</button>
+<!-- Directive 3 -->
+<button class="directive-card group w-full text-left p-6 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex items-center justify-between" onclick="selectDirective('Speak with Senior Private Client Partner', 'Confidential briefing with Founding Atelier Partner')" type="button">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">support_agent</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase block">Speak with Senior Private Client Partner</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct confidential telephone or encrypted video liaison with Atelier leadership.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</button>
+<!-- Directive 4 -->
+<button class="directive-card group w-full text-left p-6 bg-surface-container-low hover:bg-surface-bright transition-all duration-300 flex items-center justify-between" onclick="selectDirective('Receive Confidential Technical Monograph', 'Full elevation drawings, materiality sheets, and legal registry')" type="button">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 bg-surface-container-highest flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">menu_book</span>
+</div>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface uppercase block">Receive Technical Monograph &amp; Materiality Dossier</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive architectural elevations, structural engineering metrics, and finish catalogs.</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</button>
+</div>
+<!-- Step Navigation Action -->
+<div class="flex items-center justify-between pt-6">
+<button class="px-6 py-4 bg-surface-container text-on-surface font-button-text text-button-text uppercase tracking-widest hover:bg-surface-container-high transition-colors inline-flex items-center gap-2" onclick="goToStep(3)" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                  Back
+                </button>
+<button class="px-8 py-4 bg-primary text-on-primary font-button-text text-button-text uppercase tracking-widest hover:bg-neutral-800 transition-colors inline-flex items-center gap-2" onclick="goToStep(5)" type="button">
+                  Confidential Enrollment
+                  <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 05: CONFIDENTIAL PATRON ENROLLMENT -->
+<div class="step-pane hidden flex-col space-y-8" id="step-view-5">
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Step 05 / 05</span>
+<span class="font-label-caps text-[10px] text-on-surface-variant">Identity &amp; Liaison Protocol</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface uppercase">
+                  Confidential Identification
+                </h2>
+<p class="font-body-default text-body-default text-on-surface-variant">
+                  Transmissions are encrypted under Swiss data protection protocols. Zero unsolicited outreach or secondary distribution.
+                </p>
+</div>
+<form class="space-y-6 pt-2" id="advisory-form" onsubmit="handleFormSubmit(event)">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Name Input -->
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider block">
+                      Full Patron Name *
+                    </label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-bright transition-colors" id="patron-name" oninput="updateSummary('name', this.value)" placeholder="e.g. Lord Alistair Vance" required="" type="text"/>
+</div>
+<!-- Email Input -->
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider block">
+                      Confidential Email Address *
+                    </label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-bright transition-colors" id="patron-email" oninput="updateSummary('email', this.value)" placeholder="e.g. vance@holding-group.ch" required="" type="email"/>
+</div>
+<!-- Telephone / WhatsApp -->
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider block">
+                      Direct Telephone / WhatsApp *
+                    </label>
+<input class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-bright transition-colors" id="patron-phone" oninput="updateSummary('phone', this.value)" placeholder="+41 22 819 00 00 / +92 300 0000000" required="" type="tel"/>
+</div>
+<!-- Preferred Liaison Channel -->
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider block">
+                      Preferred Channel
+                    </label>
+<select class="w-full bg-surface-container-low px-4 py-3 text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-bright transition-colors" id="patron-channel" onchange="updateSummary('channel', this.value)">
+<option value="WhatsApp Concierge Desk">Direct WhatsApp Concierge Desk</option>
+<option value="Encrypted Telephone Call">Encrypted Voice Consultation</option>
+<option value="Confidential Email Dossier">Confidential Email Dossier Only</option>
+<option value="Geneva / London Atelier Visit">In-Person Geneva / London Atelier</option>
+</select>
+</div>
+</div>
+<!-- Bespoke Notes -->
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider block">
+                    Specific Spatial, Legal, or Architectural Notes (Optional)
+                  </label>
+<textarea class="w-full bg-surface-container-low p-4 text-on-surface font-body-default text-body-default focus:outline-none focus:bg-surface-bright transition-colors resize-none" id="patron-notes" placeholder="Specify any specific privacy mandates, tax residency considerations, or architectural modifications..." rows="3"></textarea>
+</div>
+<!-- Guarantee Badge -->
+<div class="p-4 bg-surface-container-low flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified_user</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant font-light leading-relaxed">
+                    Hills Pavillion S.A. operates under Swiss fiduciary confidentiality covenants. Your contact details will only be accessible to your assigned Client Partner.
+                  </p>
+</div>
+<!-- Step Navigation Action -->
+<div class="flex items-center justify-between pt-6">
+<button class="px-6 py-4 bg-surface-container text-on-surface font-button-text text-button-text uppercase tracking-widest hover:bg-surface-container-high transition-colors inline-flex items-center gap-2" onclick="goToStep(4)" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+                    Back
+                  </button>
+<button class="px-10 py-4 bg-primary text-on-primary font-button-text text-button-text uppercase tracking-widest hover:bg-neutral-800 transition-colors inline-flex items-center gap-3" type="submit">
+<span>Submit Acquisition Dossier</span>
+<span class="material-symbols-outlined text-[18px]">lock</span>
+</button>
+</div>
+</form>
+</div>
+<!-- SUBMISSION CONFIRMATION STATE (MODAL / OVERLAY) -->
+<div class="hidden flex-col space-y-8 text-center py-8" id="confirmation-view">
+<div class="w-16 h-16 bg-surface-container-low rounded-full mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[32px]">check</span>
+</div>
+<div class="space-y-3 max-w-xl mx-auto">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest block">
+                  Transmission Authenticated / Reference HP-8942-SGS
+                </span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface uppercase">
+                  Thank you. Your inquiry has been logged.
+                </h2>
+<p class="font-body-lead text-body-lead text-on-surface-variant font-light">
+                  Your confidential dossier has been received by the Hills Pavillion Private Client Desk in Geneva. An Atelier partner will initiate liaison within 4 business hours.
+                </p>
+</div>
+<!-- Summary Card in Confirmation -->
+<div class="max-w-xl mx-auto w-full bg-surface-container-low p-6 text-left space-y-4">
+<div class="flex items-center justify-between pb-3">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Assigned Portfolio Reference</span>
+<span class="font-label-index text-label-index text-on-surface" id="confirm-ref">HP-8942-SGS</span>
+</div>
+<div class="grid grid-cols-2 gap-4 font-body-sm text-body-sm">
+<div>
+<span class="text-on-surface-variant block text-xs">Horizon</span>
+<span class="text-on-surface font-medium" id="confirm-interest">Residential Sanctum</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-xs">Monument Site</span>
+<span class="text-on-surface font-medium" id="confirm-monument">The Lacustrine Pavilions</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-xs">Spatial Footprint</span>
+<span class="text-on-surface font-medium" id="confirm-scale">500 - 800 m²</span>
+</div>
+<div>
+<span class="text-on-surface-variant block text-xs">Allocation Tier</span>
+<span class="text-on-surface font-medium" id="confirm-capital">PKR 250M – 500M</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+<button class="px-8 py-4 bg-primary text-on-primary font-button-text text-button-text uppercase tracking-widest hover:bg-neutral-800 transition-colors" onclick="resetForm()" type="button">
+                  Return to Portfolio
+                </button>
+<a class="px-8 py-4 bg-surface-container text-on-surface font-button-text text-button-text uppercase tracking-widest hover:bg-surface-container-high transition-colors inline-flex items-center gap-2" href="https://wa.me/41228190000" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+                  Connect via WhatsApp Desk
+                </a>
+</div>
+</div>
+</div>
+<!-- Bottom Architectural Assurance Bar -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+<div class="flex items-start gap-4">
+<span class="font-label-index text-label-index text-secondary">01.</span>
+<div class="space-y-1">
+<h4 class="font-label-caps text-label-caps uppercase text-on-surface">Artisanal Permanence</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Each monument is limited to single-digit collector editions across European and alpine sanctuaries.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="font-label-index text-label-index text-secondary">02.</span>
+<div class="space-y-1">
+<h4 class="font-label-caps text-label-caps uppercase text-on-surface">Escrow Integrity</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Structured staged drawdowns audited via accredited Swiss canton institutional custodians.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="font-label-index text-label-index text-secondary">03.</span>
+<div class="space-y-1">
+<h4 class="font-label-caps text-label-caps uppercase text-on-surface">Bespoke Governance</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Direct liaison with our principal architects and master stone carvers throughout execution.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ======================= -->
+<!-- RIGHT / TELEMETRY DOSSIER -->
+<!-- ======================= -->
+<div class="lg:col-span-4 lg:sticky lg:top-28 space-y-6">
+<!-- Telemetry Summary Card -->
+<div class="bg-primary text-on-primary p-8 shadow-md relative overflow-hidden">
+<!-- Subtle Geometric Accent -->
+<div class="absolute -right-8 -bottom-8 w-36 h-36 bg-surface-container-highest/5 rounded-full pointer-events-none"></div>
+<div class="flex items-center justify-between pb-6">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-subheading-editorial text-[10px] uppercase tracking-widest text-secondary-fixed">
+                  Curated Advisory Dossier
+                </span>
+</div>
+<span class="font-label-caps text-[9px] uppercase tracking-widest text-on-primary-container">
+                Ref: HP-8942
+              </span>
+</div>
+<!-- Dynamic Image Vignette Preview -->
+<div class="w-full h-36 overflow-hidden bg-primary-container mb-6 relative">
+<img class="w-full h-full object-cover transition-all duration-700 opacity-90" data-alt="Cinematic architectural rendering of minimalist stone residence reflection in lake at twilight. Moody alpine landscape with warm interior lighting." id="summary-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5H8yC2SDqk_FdJvb5zwv_iu5A7Pc00MWtj4Gsj9ct2s_t9cDjweuM8BthJHhxqY9oprfHy30Mbfj_1J25mOpXhuh5hI_Lmfd4sJBKE-xMPddWo4eYTBi3UkMhQiQtmpAAScH1FBQnCD26jhVMtI6s0zakhNLxnvUWN3LUa7_o3K64FSiDCnh4RDgNVcbUyPbgsEMm4kYXNDCiOwC8_MmafXvSDuGu6gACl8In3hWjyQzFoPfLBkO2"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 bg-primary/80 backdrop-blur-sm text-surface-bright font-label-caps text-[9px] uppercase tracking-widest" id="summary-monument-label">
+                The Lacustrine Pavilions
+              </div>
+</div>
+<!-- Telemetry Field Matrix -->
+<div class="space-y-4 pb-6">
+<!-- Field 1 -->
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-on-primary-container block mb-0.5">
+                  Allocated Interest
+                </span>
+<p class="font-headline-sm text-[16px] text-surface-bright tracking-tight" id="summary-interest">
+                  Residential Sanctum
+                </p>
+<p class="font-body-sm text-[11px] text-on-primary-container truncate" id="summary-interest-sub">
+                  Private luxury villas &amp; lakefront sanctuaries
+                </p>
+</div>
+<!-- Field 2 -->
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-on-primary-container block mb-0.5">
+                  Selected Monument
+                </span>
+<p class="font-headline-sm text-[16px] text-surface-bright tracking-tight" id="summary-monument">
+                  The Lacustrine Pavilions
+                </p>
+<p class="font-body-sm text-[11px] text-on-primary-container" id="summary-monument-loc">
+                  Engadin Valley, Switzerland
+                </p>
+</div>
+<!-- Field 3 -->
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-on-primary-container block mb-0.5">
+                  Spatial &amp; Financial Parameters
+                </span>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<div class="bg-surface-container-highest/10 p-2">
+<span class="text-[9px] uppercase text-on-primary-container block">Format / Scale</span>
+<span class="font-body-sm text-xs text-surface-bright block truncate" id="summary-scale">500 – 800 m²</span>
+</div>
+<div class="bg-surface-container-highest/10 p-2">
+<span class="text-[9px] uppercase text-on-primary-container block">Capital Allocation</span>
+<span class="font-body-sm text-xs text-surface-bright block truncate" id="summary-capital">PKR 250M – 500M</span>
+</div>
+</div>
+</div>
+<!-- Field 4 -->
+<div>
+<span class="font-label-caps text-[10px] uppercase tracking-wider text-on-primary-container block mb-0.5">
+                  Primary Strategic Directive
+                </span>
+<p class="font-body-sm text-xs text-surface-bright font-medium" id="summary-directive">
+                  Book an Escorted Site Visit (Helicopter / Walkthrough)
+                </p>
+</div>
+</div>
+<!-- Desk Liaison Quick Action -->
+<div class="pt-4 flex flex-col space-y-3">
+<a class="w-full py-3 bg-surface-bright text-primary hover:bg-surface text-center font-button-text text-button-text uppercase tracking-widest transition-colors flex items-center justify-center gap-2" href="https://wa.me/41228190000" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+                Direct WhatsApp Concierge
+              </a>
+<div class="flex items-center justify-between text-[11px] text-on-primary-container font-label-caps">
+<span>Geneva Desk Active</span>
+<span class="text-secondary-fixed">CET 14:32 • 4h SLA</span>
+</div>
+</div>
+</div>
+<!-- Trust & Privacy Inscription -->
+<div class="bg-surface-container-low p-6 space-y-3">
+<span class="font-label-caps text-[10px] uppercase tracking-widest text-secondary block">
+              Architectural Custody &amp; Discretion
+            </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant font-light">
+              "We regard the home not simply as physical shelter, but as an eternal contemplative sanctuary. Every commission remains held in profound structural silence."
+            </p>
+<div class="pt-2 flex items-center gap-3">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center">
+<span class="text-on-primary text-[10px] font-headline-md">H</span>
+</div>
+<span class="font-label-caps text-[10px] uppercase text-on-surface">Hills Pavillion Atelier Desk</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript Controller -->
+<script>
+    let currentStep = 1;
+
+    const dossierState = {
+      interest: 'Residential Sanctum',
+      interestDesc: 'Private luxury villas, alpine residences & lakefront sanctuaries',
+      monument: 'The Lacustrine Pavilions',
+      monumentLoc: 'Engadin Valley, Switzerland',
+      format: 'Estate Villa',
+      scale: '500 - 800 m² (5,400 - 8,600 sq.ft)',
+      capital: 'PKR 250M – 500M',
+      directive: 'Book an Escorted Site Visit',
+      patronName: '',
+      patronEmail: '',
+      patronPhone: '',
+      channel: 'WhatsApp Concierge Desk'
+    };
+
+    function goToStep(step) {
+      if (step < 1 || step > 5) return;
+      currentStep = step;
+
+      // Hide all steps
+      for (let i = 1; i <= 5; i++) {
+        const view = document.getElementById('step-view-' + i);
+        if (view) {
+          view.classList.add('hidden');
+          view.classList.remove('flex');
+        }
+
+        // Update nav bars
+        const bar = document.getElementById('step-bar-' + i);
+        const num = document.getElementById('step-num-' + i);
+        if (bar && num) {
+          if (i <= step) {
+            bar.className = 'h-1 w-full bg-primary mb-3 transition-colors duration-300';
+            num.className = 'font-label-caps text-label-caps uppercase text-primary tracking-widest';
+          } else {
+            bar.className = 'h-1 w-full bg-surface-container-highest mb-3 transition-colors duration-300';
+            num.className = 'font-label-caps text-label-caps uppercase text-on-surface-variant tracking-widest';
+          }
+        }
+      }
+
+      // Show requested step
+      const activeView = document.getElementById('step-view-' + step);
+      if (activeView) {
+        activeView.classList.remove('hidden');
+        activeView.classList.add('flex');
+      }
+
+      window.scrollTo({ top: 180, behavior: 'smooth' });
+    }
+
+    function selectInterest(name, desc) {
+      dossierState.interest = name;
+      dossierState.interestDesc = desc;
+
+      const summaryInterest = document.getElementById('summary-interest');
+      const summaryInterestSub = document.getElementById('summary-interest-sub');
+      if (summaryInterest) summaryInterest.textContent = name;
+      if (summaryInterestSub) summaryInterestSub.textContent = desc;
+
+      // Auto advance
+      goToStep(2);
+    }
+
+    function selectMonument(name, loc, imgUrl) {
+      dossierState.monument = name;
+      dossierState.monumentLoc = loc;
+
+      const summaryMonument = document.getElementById('summary-monument');
+      const summaryMonumentLoc = document.getElementById('summary-monument-loc');
+      const summaryMonumentLabel = document.getElementById('summary-monument-label');
+
+      if (summaryMonument) summaryMonument.textContent = name;
+      if (summaryMonumentLoc) summaryMonumentLoc.textContent = loc;
+      if (summaryMonumentLabel) summaryMonumentLabel.textContent = name;
+
+      goToStep(3);
+    }
+
+    function setParam(type, val, el) {
+      dossierState[type] = val;
+
+      // Highlight active button in group
+      const groupClass = 'param-btn-' + type;
+      document.querySelectorAll('.' + groupClass).forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+
+      if (el) {
+        el.classList.remove('bg-surface-container-low', 'text-on-surface');
+        el.classList.add('bg-primary', 'text-on-primary');
+      }
+
+      // Update sidebar
+      if (type === 'scale' || type === 'format') {
+        const summaryScale = document.getElementById('summary-scale');
+        if (summaryScale) summaryScale.textContent = dossierState.scale;
+      }
+      if (type === 'capital') {
+        const summaryCapital = document.getElementById('summary-capital');
+        if (summaryCapital) summaryCapital.textContent = val;
+      }
+    }
+
+    function selectDirective(name, desc) {
+      dossierState.directive = name;
+      const summaryDirective = document.getElementById('summary-directive');
+      if (summaryDirective) summaryDirective.textContent = name;
+      goToStep(5);
+    }
+
+    function updateSummary(field, val) {
+      if (field === 'name') dossierState.patronName = val;
+      if (field === 'email') dossierState.patronEmail = val;
+      if (field === 'phone') dossierState.patronPhone = val;
+      if (field === 'channel') dossierState.channel = val;
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+
+      // Hide all steps
+      for (let i = 1; i <= 5; i++) {
+        const view = document.getElementById('step-view-' + i);
+        if (view) {
+          view.classList.add('hidden');
+          view.classList.remove('flex');
+        }
+      }
+
+      // Update Confirmation panel
+      document.getElementById('confirm-interest').textContent = dossierState.interest;
+      document.getElementById('confirm-monument').textContent = dossierState.monument;
+      document.getElementById('confirm-scale').textContent = dossierState.scale;
+      document.getElementById('confirm-capital').textContent = dossierState.capital;
+
+      const confirmView = document.getElementById('confirmation-view');
+      if (confirmView) {
+        confirmView.classList.remove('hidden');
+        confirmView.classList.add('flex');
+      }
+
+      window.scrollTo({ top: 160, behavior: 'smooth' });
+    }
+
+    function resetForm() {
+      const confirmView = document.getElementById('confirmation-view');
+      if (confirmView) {
+        confirmView.classList.add('hidden');
+        confirmView.classList.remove('flex');
+      }
+      goToStep(1);
+    }
+  </script>
+</div></main><footer class="w-full bg-primary-container text-surface-bright pt-20 pb-12 shadow-[0_-4px_24px_rgba(0,0,0,0.06)]"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-16"><div class="lg:col-span-4 flex flex-col justify-between space-y-8"><div><span class="font-headline-lg text-headline-lg tracking-tight uppercase text-surface-container-lowest block">Hills Pavillion</span><p class="font-body-lead text-body-lead text-on-primary-container mt-4 max-w-sm font-light">Quiet architectural permanence, spatial contemplation, and structural substance engineered for generations.</p></div><div class="flex items-center gap-4 text-on-primary-container"><a class="p-2 hover:text-surface-container-lowest transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a class="p-2 hover:text-surface-container-lowest transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">public</span></a><a class="p-2 hover:text-surface-container-lowest transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">work</span></a><a class="p-2 hover:text-surface-container-lowest transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">play_circle</span></a></div></div><div class="lg:col-span-5 grid grid-cols-2 sm:grid-cols-3 gap-8"><div><h4 class="font-label-caps text-label-caps uppercase text-secondary-fixed-dim mb-6">Portfolio</h4><ul class="space-y-3 font-body-sm text-body-sm text-on-primary-container"><li><a class="hover:text-surface-container-lowest transition-colors" data-path="projects" href="#">Master Residences</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="properties" href="#">Private Estates</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="properties" href="#">Alpine Pavilions</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="construction" href="#">Artisanal Methods</a></li></ul></div><div><h4 class="font-label-caps text-label-caps uppercase text-secondary-fixed-dim mb-6">Global Coordinates</h4><div class="space-y-4 font-body-sm text-body-sm text-on-primary-container"><div><p class="text-surface-container-lowest font-medium">Geneva</p><p class="text-xs text-on-primary-container">Rue du Rhône 42</p><span class="font-label-caps text-[9px] uppercase tracking-widest text-secondary">CET / 09:00</span></div><div><p class="text-surface-container-lowest font-medium">London</p><p class="text-xs text-on-primary-container">Mayfair Place 7</p><span class="font-label-caps text-[9px] uppercase tracking-widest text-secondary">GMT / 08:00</span></div><div><p class="text-surface-container-lowest font-medium">Dubai</p><p class="text-xs text-on-primary-container">DIFC Gate Precinct 4</p><span class="font-label-caps text-[9px] uppercase tracking-widest text-secondary">GST / 12:00</span></div></div></div><div><h4 class="font-label-caps text-label-caps uppercase text-secondary-fixed-dim mb-6">Atelier</h4><ul class="space-y-3 font-body-sm text-body-sm text-on-primary-container"><li><a class="hover:text-surface-container-lowest transition-colors" data-path="about" href="#">Philosophy</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="media" href="#">Monograph</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="media" href="#">Press Archives</a></li><li><a class="hover:text-surface-container-lowest transition-colors" data-path="inquiries" href="#">Private Registry</a></li></ul></div></div><div class="lg:col-span-3 flex flex-col justify-between bg-surface-container-highest/5 p-8 rounded"><div><span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary-fixed-dim block mb-2">Confidential Inquiries</span><p class="font-body-sm text-body-sm text-on-primary-container mb-6">Private client representation and monograph acquisition.</p><form class="space-y-3" onsubmit="return false;"><div class="relative"><input class="w-full bg-transparent border-b border-outline text-surface-container-lowest placeholder:text-on-primary-container font-body-sm text-body-sm py-2 focus:outline-none focus:border-surface-container-lowest transition-colors" placeholder="Atelier Inscription (Email)" type="email"/></div><button class="w-full mt-4 py-3 bg-surface-container-lowest text-primary font-button-text text-button-text uppercase tracking-widest hover:bg-surface-bright transition-colors" type="submit">Transmit Inquiry</button></form></div><p class="font-body-sm text-[11px] text-on-primary-container mt-6 italic">By appointment only. All dossiers remain strictly confidential.</p></div></div><div class="pt-8 mt-4 flex flex-col md:flex-row items-center justify-between gap-4 font-body-sm text-[12px] text-on-primary-container"><p>© 2025 Hills Pavillion Development Group S.A. Building Places. Creating Legacies.</p><div class="flex items-center gap-6 font-label-caps text-label-caps"><a class="hover:text-surface-container-lowest transition-colors" href="#">Legal Notice</a><a class="hover:text-surface-container-lowest transition-colors" href="#">Client Privacy</a><a class="hover:text-surface-container-lowest transition-colors" href="#">Architectural Registry</a></div></div></div></footer></body></html>
